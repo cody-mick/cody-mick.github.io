@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Squada+One&display=swap");
+
 .header-image {
   max-height: 300px;
   float: right;
@@ -5,23 +7,26 @@
 }
 
 header {
-    background-color: #518AFC;
+  background-color: #518afc;
   text-align: center;
   border-radius: 15px;
   padding: 10px;
   font-size: 1.75em;
+  font-family: "Squada One", cursive;
 }
 
 footer {
-  background-color: #518AFC;
+  background-color: #518afc;
   text-align: center;
   border-radius: 15px;
   padding: 10px;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
   background-color: slategray;
   font-size: 1.25em;
+  font-family: "Raleway", sans-serif;
 }
 
 main {
@@ -34,5 +39,5 @@ h2 {
 }
 
 #modinfo {
-  color: #556669;
+  color: black;
 }
