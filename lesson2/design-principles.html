@@ -5,7 +5,10 @@
     <meta name="viewport" content="width-device-width,initial-scale=1.0" />
     <title>Design Principles Document</title>
     <meta name="description" content="Place description here" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="css/small.css" />
   </head>
   <body>
@@ -14,15 +17,24 @@
     </header>
     <main>
       <h2 class="principle1">The Rule of Thirds</h2>
-      <p>The name of the company</p>
-      <a href="#" target="_blank">A Link to the Company in the example.</a>
-      <img src="https://unsplash.it/200/200?image=501" />
-      <p>Why you chose this specific site for this principle.</p>
       <h2 class="principle2">PARC: Repetition</h2>
-      <p>Apple, Inc.</p>
-      <a href="https://www.apple.com" target="_blank">Apple's Website</a>
-      <img src="images/apple website screenshot.png" />
-      <p>
+      <h2 class="principle3">White Space and Clean Design</h2>
+      <h3 class="company1title">Build in Amsterdam</h3>
+      <h3 class="company2title">Apple, Inc.</h3>
+      <h3 class="company3title">Angara</h3>
+      <img class="company1img" src="images/Build In Amsterdam.png" />
+      <img class="company2img" src="images/apple website screenshot.png" />
+      <img class="company3img" src="images/Angara Mobile View.png" />
+      <p class="company1desc">
+        I chose this site because in the desktop view, the images are spread
+        into a perfect third of the page, and they used contrasting colors to
+        make each column pop. When shrunk down into the mobile view, the website
+        maintained that evenly spaced feel by stacking all the images as squares
+        one right after the other. I think the design translated well into the
+        mobile version, and the desktop view makes excellent use of the rule of
+        thirds.
+      </p>
+      <p class="company2desc">
         I chose Apple because of how their design responds to being shrunk down.
         There are animations and big wide displays when viewing the website on a
         desktop, but when shrunk down into the mobile view, The website turns
@@ -37,18 +49,36 @@
         looking for. I would say it is an excellent use of repetition to make
         the mobile design feel just as inviting as the desktop site.
       </p>
-      <h2 class="principle3">White Space and Clean Design</h2>
-      <p>The name of the company</p>
-      <a href="#" target="_blank">A Link to the Company in the example.</a>
-      <img src="https://unsplash.it/200/200?image=515" />
-      <p>Why you chose this specific site for this principle.</p>
+      <p class="company3desc">
+        I chose this site because their layour was very responsive, and really
+        clean. Clean images and smooth transitions we perfectly translated to a
+        mobile view, and the company makes good use of white space, and clean,
+        straight design. They are not blasting you with so much information that
+        you have no idea what is going on, and they make excellent use of
+        infographics and quick summaries of information. Really clean, really
+        sleek, and just pleasing to look at.
+      </p>
+
+      <a
+        class="company1link"
+        href="https://www.buildinamsterdam.com/cases"
+        target="_blank"
+      >
+        Build in Amsterdam
+      </a>
+      <a class="company2link" href="https://www.apple.com" target="_blank"
+        >Apple</a
+      >
+
+      <a class="company3link" href="https://angaraservice.com" target="_blank"
+        >Angara</a
+      >
     </main>
     <footer>
       &copy; <span id="year"></span> | Cody Mickelsen | Idaho |
       <a href="byui.edu/online" target="_blank">Online Learning</a>
       <p id="modinfo">Last Modified: <span id="lastmodified"></span></p>
     </footer>
-    <script src="lesson2/js/design-principles.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="js/design-principles.js"></script>
   </body>
 </html>

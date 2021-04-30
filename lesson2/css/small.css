@@ -1,3 +1,27 @@
-img {
-    max-height: 32em;
+.company1img,
+.company2img,
+.company3img {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5em;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+a {
+    text-align: center;
 }
