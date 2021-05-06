@@ -2,7 +2,7 @@
   --color1: #4c5b61;
   --color2: #3f6675;
   --color3: #0e2933;
-  --color4: #88b811;
+  --color4: #16a4e6;
 }
 
 h1,
@@ -29,6 +29,16 @@ header {
 footer {
   text-align: center;
   font-family: "Jura", sans-serif;
+  background-color: var(--color1);
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: white;
 }
 
 header,
@@ -57,16 +67,18 @@ nav ul li a {
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
+  color: var(--color3);
 }
 
 nav a:hover {
-  background-color: #bbb;
-  color: #36454f;
+  background-color: var(--color4);
+  color: var(--color3);
 }
 
 .active {
-  color: yellow;
+  background-color: var(--color4);
+  color: var(--color3);
 }
 
 main {
@@ -170,4 +182,8 @@ main {
 
 .font-1-sample {
 	font-family: 'Krona One', sans-seriff;
+}
+
+.font-2-sample {
+  font-family: 'Jura', sans-serif;
 }
