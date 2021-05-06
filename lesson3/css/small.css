@@ -1,94 +1,173 @@
 :root {
-    --color1: #4C5B61;
-    --color2: #3F6675;
-    --color3: #0E2933;
-    --color4: #88B811;
+  --color1: #4c5b61;
+  --color2: #3f6675;
+  --color3: #0e2933;
+  --color4: #88b811;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Krona One', sans-serif;
-    color: var(--color2)
+  font-family: "Krona One", sans-serif;
+  color: var(--color2);
 }
 
 p,
 ul {
-    font-family: 'Jura', sans-serif;
-    color: var(--color3);
+  font-family: "Jura", sans-serif;
+  color: var(--color3);
 }
 
 header {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
+  font-family: "Jura", sans-serif;
 }
 
 header,
 nav,
 main,
 footer {
-	max-width: 767px;
-	margin: 0 auto;
+  max-width: 767px;
+  margin: 0 auto;
 }
 
 nav {
-	text-align: center;
-	box-shadow: 0 2px 15px gray;
-    width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
+  width: 100%;
 }
 
 nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 nav ul li a {
-	display: block;
-	text-align: center;
-	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 0.95rem;
+  display: block;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
 }
 
 nav a:hover {
-	background-color: #bbb;
-	color: #36454f;
+  background-color: #bbb;
+  color: #36454f;
 }
 
 .active {
-	color: yellow;
+  color: yellow;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1.5em;
+  padding: 1em;
 }
 
 .color1 {
-    background-color: var(--color1);
-    color: white;
+  background-color: var(--color1);
+  color: white;
+  grid-column: span 2;
+  text-align: center;
 }
 
 .color2 {
-    background-color: var(--color2);
-    color: white;
+  background-color: var(--color2);
+  color: white;
+  grid-column: span 2;
+  text-align: center;
 }
 
 .color3 {
-    background-color: var(--color3);
-    color: white;
+  background-color: var(--color3);
+  color: white;
+  grid-column: span 2;
+  text-align: center;
 }
 
 .color4 {
-    background-color: var(--color4);
+  background-color: var(--color4);
+  grid-column: span 2;
+  text-align: center;
+}
+
+.sitepurpose,
+.domain-name {
+  grid-column: span 3;
+}
+
+.target-audience,
+.persona-1,
+.persona-2,
+.scenario-1,
+.scenario-2,
+.scenario-3,
+.scenario-4,
+.scenario-5 {
+  grid-column: span 1;
+}
+
+.target-audience-desc,
+.persona-1-desc,
+.persona-2-desc,
+.scenario-1-desc,
+.scenario-2-desc,
+.scenario-3-desc,
+.scenario-4-desc,
+.scenario-5-desc {
+  grid-column: span 2;
+}
+
+.color1-header,
+.color1-nav,
+.color1-footer,
+.color-2-h1,
+.color-2-h2,
+.color-2-h3,
+.color-3-p,
+.accent-color {
+	grid-column: span 1;
+	text-align: right;
+}
+
+.font-statement {
+	grid-column: span 3;
+}
+
+.header-font,
+.nav-font,
+.footer-font,
+.h1-font,
+.h2-font,
+.h3-font,
+.p-font {
+	grid-column: span 1;
+	text-align: right;
+}
+
+.font-1,
+.font-2 {
+	grid-column: span 1;
+	text-align: center;
+}
+
+.font-1-sample,
+.font-2-sample {
+	grid-column: span 1;
+}
+
+.font-1-sample {
+	font-family: 'Krona One', sans-seriff;
 }
