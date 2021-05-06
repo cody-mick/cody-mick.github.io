@@ -31,6 +31,7 @@ footer {
   font-family: "Jura", sans-serif;
   background-color: var(--color1);
   color: white;
+  padding: 1em 1em 1em 1em;
 }
 
 footer p {
@@ -93,6 +94,8 @@ main {
   color: white;
   grid-column: span 2;
   text-align: center;
+  padding: 1em 1em 1em 1em;
+  border-radius: 15px;
 }
 
 .color2 {
@@ -100,6 +103,8 @@ main {
   color: white;
   grid-column: span 2;
   text-align: center;
+  padding: 1em 1em 1em 1em;
+  border-radius: 15px;
 }
 
 .color3 {
@@ -107,17 +112,31 @@ main {
   color: white;
   grid-column: span 2;
   text-align: center;
+  padding: 1em 1em 1em 1em;
+  border-radius: 15px;
 }
 
 .color4 {
   background-color: var(--color4);
   grid-column: span 2;
   text-align: center;
+  padding: 1em 1em 1em 1em;
+  border-radius: 15px;
 }
 
 .sitepurpose,
+.sitepurposedesc,
 .domain-name {
   grid-column: span 3;
+}
+
+.sitepurpose {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--color4);
+}
+
+.sitepurposedesc {
+  margin-top: 0;
 }
 
 .target-audience,
@@ -151,7 +170,7 @@ main {
 .color-3-p,
 .accent-color {
 	grid-column: span 1;
-	text-align: right;
+	text-align: left;
 }
 
 .font-statement {
