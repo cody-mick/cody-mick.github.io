@@ -18,4 +18,9 @@
     .navigation li:first-child {
       display: none;
     }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }

@@ -6,7 +6,8 @@
 }
 
 .header-image {
-  width: 200px;
+  width: 400px;
+  margin: -125px auto -125px auto;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
   justify-items: center;
   padding: 10px;
   background-color: var(--color1);
-  font-family: 'Krona One', sans-serif;
+  font-family: "Krona One", sans-serif;
 }
 
 h1 {
@@ -35,7 +36,7 @@ footer {
   margin: 0 auto;
 }
 
-nav {
+.navigation {
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -56,26 +57,17 @@ nav {
 }
 
 .navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-	font-weight: 700;
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
 }
 
 .responsive li {
   display: block;
 }
-
-/*
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-*/
 
 nav ul li a {
   display: block;
@@ -84,12 +76,28 @@ nav ul li a {
   padding: 0.75rem;
   text-decoration: none;
   font-size: 1.3rem;
-  font-family: 'Krona One', sans-serif;
+  font-family: "Krona One", sans-serif;
   color: #fff;
 }
 
 nav a:hover {
   background-color: var(--color4);
+}
+
+.title div {
+  margin: -15px auto 20px auto;
+}
+
+.town-name {
+  font-family: "Krona One", sans-serif;
+  text-align: center;
+}
+
+.preston-hero,
+.preston-5day,
+.preston-article,
+.preston-contact {
+  font-family: "Jura", sans-serif;
 }
 
 footer {
@@ -99,7 +107,7 @@ footer {
   margin-top: 100px;
   background-color: var(--color1);
   color: #fff;
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
 .location-map {
