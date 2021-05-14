@@ -78,8 +78,10 @@ nav ul li a {
   color: #fff;
 }
 
-nav a:hover {
+nav a:hover,
+.active {
   background-color: var(--color4);
+  color: var(--color3);
 }
 
 .title div {
