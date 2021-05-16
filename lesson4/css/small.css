@@ -6,7 +6,7 @@
 }
 
 body {
-  max-width: 960px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -44,9 +44,6 @@ main {
   text-align: center;
   width: 100%;
   background-color: var(--color3);
-}
-
-.navigation {
   list-style: none;
   padding: 0;
 }
@@ -59,17 +56,13 @@ main {
   display: none;
 }
 
-.navigation a {
-  display: block;
-  padding: 0.75rem;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-}
-
 .responsive li {
   display: block;
+}
+
+.active {
+  background-color: var(--color4);
+  color: var(--color3);
 }
 
 nav ul li a {
@@ -79,12 +72,11 @@ nav ul li a {
   padding: 0.75rem;
   text-decoration: none;
   font-size: 1.3rem;
-  font-family: "Krona One", sans-serif;
   color: #fff;
+  font-family: "Krona One", sans-serif;
 }
 
-nav a:hover,
-.active {
+nav a:hover {
   background-color: var(--color4);
   color: var(--color3);
 }
@@ -105,9 +97,9 @@ nav a:hover,
 .preston-article,
 .preston-contact {
   font-family: "Jura", sans-serif;
-  padding: .25em 5em .25em 5em;
+  padding: 0.25em 5em 0.25em 5em;
   border: 2px solid var(--color3);
-  margin: .25em 5em .25em 5em;
+  margin: 0.25em 5em 0.25em 5em;
   background-color: darkgray;
 }
 
@@ -119,6 +111,7 @@ footer {
   background-color: var(--color1);
   color: #fff;
   font-family: "Jura", sans-serif;
+  padding-bottom: 3em;
 }
 
 .location-map {
