@@ -5,6 +5,11 @@
   --color4: #16a4e6;
 }
 
+body {
+  max-width: 960px;
+  margin: auto;
+}
+
 .header-image {
   width: 400px;
   margin: -125px auto -125px auto;
