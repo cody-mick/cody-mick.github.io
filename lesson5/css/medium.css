@@ -1,0 +1,26 @@
+@media only screen and (min-width: 49.25em) {
+    .navigation {
+      display: flex;
+    }
+
+    .navigation li {
+      display: block;
+      flex: 1 1 auto;
+    }
+  
+    .navigation a {
+      text-align: center;
+      font-size: 1em;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navigation li:first-child {
+      display: none;
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }

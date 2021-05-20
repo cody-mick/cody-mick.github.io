@@ -1,0 +1,33 @@
+@media only screen and (min-width: 60em) {
+  header {
+    display: grid;
+    grid-template-columns: 200px 720px;
+  }
+
+  .title {
+    grid-column-start: 2;
+    margin-top: 2.5em;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  header,
+  nav,
+  main {
+    margin: 0;
+  }
+
+  footer {
+    margin: 2em 0 0 0;
+  }
+}
