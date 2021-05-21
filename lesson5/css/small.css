@@ -39,6 +39,12 @@ main {
   margin: 0 auto;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4em 10em 10em 10em;
+}
+
 .navigation {
   margin: 0 auto;
   text-align: center;
@@ -92,12 +98,11 @@ nav a:hover {
   text-decoration: underline 3px var(--color3);
 }
 
-.preston-hero,
 .preston-5day,
 .preston-article,
 .preston-contact {
   font-family: "Jura", sans-serif;
-  padding: 0.25em 5em 0.25em 5em;
+  padding: 0.5em 5em 0.5em 1em;
   border: 2px solid var(--color3);
   margin: 0.25em 5em 0.25em 5em;
   background-color: darkgray;
@@ -126,4 +131,9 @@ footer {
 
 .copyright-info {
   margin: 1em;
+}
+
+.hero-image {
+  max-width: 200px;
+  
 }
