@@ -6,7 +6,7 @@
 }
 
 body {
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -37,12 +37,6 @@ header,
 nav,
 main {
   margin: 0 auto;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4em 10em 10em 10em;
 }
 
 .navigation {
@@ -98,13 +92,15 @@ nav a:hover {
   text-decoration: underline 3px var(--color3);
 }
 
-.preston-5day,
-.preston-article,
-.preston-contact {
+.preston-5day {
+  display: none;
+}
+
+.preston-article {
   font-family: "Jura", sans-serif;
   padding: 0.5em 5em 0.5em 1em;
   border: 2px solid var(--color3);
-  margin: 0.25em 5em 0.25em 5em;
+  margin: 0.75em 2em 0.25em 2em;
   background-color: darkgray;
 }
 
@@ -131,9 +127,23 @@ footer {
 
 .copyright-info {
   margin: 1em;
+  grid-area: 2 / 1;
 }
 
 .hero-image {
-  max-width: 200px;
-  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  width: 87%;
+}
+
+.grid {
+  display: none;
+}
+
+.article-image {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }

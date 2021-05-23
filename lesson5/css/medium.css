@@ -19,6 +19,53 @@
       display: none;
     }
 
+    .preston-5day {
+      font-family: 'Jura', sans-serif;
+      display: block;
+      margin-bottom: -15px;
+      margin-left: 2em;
+      }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+
+    .data {
+      display: block;
+      padding: 0 5px 5px;
+      font-size: 1em;
+      text-align: center;
+      font-family: "Jura", sans-serif;
+    }
+  
+    .col-head {
+      display: block;
+      padding: 5px;
+      border-bottom: 1px solid #333;
+      text-align: center;
+      font-family: "Jura", sans-serif;
+    }
+  
+    .grid {
+      border: 1px solid #333;
+    }
+
+    .cloudy {
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-image {
+      width: 60%;
+      float: right;
+      margin: 1em;
+    }
+
     footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
