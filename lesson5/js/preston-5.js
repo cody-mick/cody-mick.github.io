@@ -48,3 +48,16 @@ hambutton.addEventListener(
   },
   false
 );
+
+let banner = document.querySelector("#banner");
+document.addEventListener("DOMContentLoaded", () => {
+  if (date.getDay() == 6) banner.style.display = "block"
+});
+
+// let bannerDate = new Date();
+// if (bannerDate.getDay == 6) {
+//   document.querySelector("#banner").style.display = "block";
+// }
+// else {
+//   document.querySelector("#banner").style.display = "none";
+// }
