@@ -88,7 +88,6 @@ nav a:hover {
   font-family: "Krona One", sans-serif;
   color: var(--color2);
   text-align: center;
-  text-decoration: underline 3px var(--color3);
 }
 
 .preston-5day {
