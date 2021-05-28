@@ -51,7 +51,7 @@ hambutton.addEventListener(
 
 let banner = document.querySelector("#banner");
 document.addEventListener("DOMContentLoaded", () => {
-  if (date.getDay() == 6) banner.style.display = "block"
+  if (date.getDay() == 5) banner.style.display = "block"
 });
 
 // let bannerDate = new Date();
