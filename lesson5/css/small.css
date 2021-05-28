@@ -148,7 +148,7 @@ footer {
 .weather-summary {
   position: absolute;
   top: 25px;
-  left: 5em;
+  left: 2em;
   border: 1px solid #333;
   padding: 0.5em 1em 0.5em 1em;
   background-color: var(--color3);
