@@ -10,17 +10,14 @@ body {
   margin: auto;
 }
 
-.header-image {
-  width: 380px;
-  margin: -125px auto -125px auto;
+.logo {
+  width: 350px;
 }
 
 header {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 45% 45%;
   justify-items: center;
-  padding: 10px;
   background-color: var(--color1);
   font-family: "Krona One", sans-serif;
 }
@@ -31,7 +28,9 @@ h1 {
 
 .title {
   color: #fff;
-}
+  padding-left: .5em;
+  margin-top: -20px;
+} 
 
 header,
 nav,
@@ -89,7 +88,7 @@ nav a:hover {
   font-family: "Krona One", sans-serif;
   color: var(--color2);
   text-align: center;
-  font-size: 2em;
+  text-decoration: underline 3px var(--color3);
 }
 
 .preston-5day {
@@ -100,7 +99,7 @@ nav a:hover {
   font-family: "Jura", sans-serif;
   padding: 0.5em 5em 0.5em 1em;
   border: 2px solid var(--color3);
-  margin: 0.75em 2em 0.25em 2em;
+  margin: 5em 2em 0.25em 2em;
   background-color: darkgray;
 }
 
@@ -116,7 +115,7 @@ footer {
 }
 
 .location-map {
-  width: 350px;
+  width: 320px;
   height: 200px;
   margin: 1em;
 }
@@ -132,10 +131,8 @@ footer {
 
 .hero-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1em;
-  width: 87%;
+  margin:auto auto 1em auto;
+  width: 100%;
 }
 
 .grid {
@@ -150,14 +147,18 @@ footer {
 
 .weather-summary {
   position: absolute;
-  top: 410px;
-  left: 50px;
+  top: 25px;
+  left: 5em;
   border: 1px solid #333;
-  padding: 1em 3em 1em 3em;
+  padding: 0.5em 1em 0.5em 1em;
   background-color: var(--color3);
   opacity: 0.9;
   color: #FFF;
   font-family: "Jura", sans-serif;
+}
+
+.preston-hero {
+  position: relative;
 }
 
 #banner {
