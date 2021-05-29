@@ -55,11 +55,16 @@
     <main>
       <h2 class="town-name">Preston Idaho</h2>
       <div class="preston-hero">
-        <img
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/franklin400.jpg">
+          <source media="(max-width: 700px)" srcset="images/franklin700.jpg">
+          <source media="(max-width: 1000px)" srcset="images/franklin1000.jpg">
+          <img
           class="hero-image"
-          src="images/sunset-1645105_1920.jpg"
-          alt="an aerial view of a town."
+          src="images/wdd230_image_franklinOriginal.jpeg"
+          alt="rising sun over mountains"
         />
+        </picture>
         <section class="weather-summary">
           <h3>Weather Summary</h3>
           <p>Current: 
