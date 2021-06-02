@@ -1,0 +1,37 @@
+@media only screen and (min-width: 60em) {
+  header {
+    grid-template-rows: 250px 150px;
+  }
+
+  .title {
+    grid-row-start: 2;
+    margin-top: 2.5em;
+    margin-bottom: 0;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  header,
+  nav,
+  main {
+    margin: 0 auto;
+  }
+
+  footer {
+    margin: 2em 0 0 0;
+  }
+
+  .location-map {
+    width: 450px;
+  }
+}
