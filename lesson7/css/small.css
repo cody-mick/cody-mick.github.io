@@ -26,6 +26,13 @@ h1 {
   color: #fff;
 }
 
+h2.title {
+  color: var(--color2);
+  text-align: center;
+  font-family: "Krona One", sans-serif;
+  margin-top: 1em;
+}
+
 .title {
   color: #fff;
   padding-left: .5em;
