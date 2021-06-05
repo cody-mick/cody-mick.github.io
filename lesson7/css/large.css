@@ -27,11 +27,18 @@
     margin: 0 auto;
   }
 
-  footer {
-    margin: 2em 0 0 0;
+  div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
   }
 
-  .location-map {
-    width: 450px;
+  .gallery-box:hover {
+    transform: scale(1.05);
+    box-shadow: -2px 2px 25px 0px
+  }
+
+  footer {
+    margin: 2em 0 0 0;
   }
 }

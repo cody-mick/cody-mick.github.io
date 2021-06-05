@@ -51,25 +51,124 @@
     <main>
       <h2 class="title">Weather Gallery</h2>
       <div class="gallery">
-        <img src="images/gallery1.jpg" alt="">
-        <img src="images/gallery2.jpg" alt="">
-        <img src="images/gallery3.jpg" alt="">
-        <img src="images/gallery4.jpg" alt="">
-        <img src="images/gallery5.jpg" alt="">
-        <img src="images/gallery6.jpg" alt="">
-        <img src="images/gallery7.jpg" alt="">
-        <img src="images/gallery8.jpg" alt="">
-        <img src="images/gallery9.jpg" alt="">
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery1.jpg"
+              alt="Blue skies over a mineral deposit"
+            />
+          </picture>
+          <div class="caption">
+            <p>Blue Skies over a Mineral Deposit</p>
+          </div>
+        </div>
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery2.jpg"
+              alt="Overcast Weather and a City Skyline"
+            />
+          </picture>
+          <div class="caption">
+            <p>Overcast Weather and a City Skyline</p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery3.jpg"
+              alt="A sunny countryside"
+            />
+          </picture>
+          <div class="caption">
+            <p>A Sunny Countryside</p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery4.jpg"
+              alt="A blazing storm cloud"
+            />
+          </picture>
+          <div class="caption">
+            <p>A Blazing Storm Cloud</p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery5.jpg"
+              alt="A Storm Brews Over a Small Town"
+            />
+          </picture>
+          <div class="caption">
+            <p>A Storm Brews Over a Small Town</p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery6.jpg"
+              alt="Evening Storm above a River"
+            />
+          </picture>
+          <div class="caption">
+            <p>Evening Storm above a River</p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery7.jpg"
+              alt="Half Cloudy, Half Sunny"
+            />
+          </picture>
+          <div class="caption">
+            <p>Half Cloudy, Half Sunny</p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery8.jpg"
+              alt="A Lighthouse in the Evening"
+            />
+          </picture>
+          <div class="caption">
+            <p>A Lighthouse in the Evening</p>
+          </div>
+        </div>
+
+        <div class="gallery-box">
+          <picture>
+            <img
+              src="https://via.placeholder.com/400x300"
+              data-src="images/gallery9.jpg"
+              alt="A Glassy Lake in the Morning"
+            />
+          </picture>
+          <div class="caption">
+            <p>A Glassy Lake in the Morning</p>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
-      <iframe
-        class="location-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853429455!2d-111.91534439341007!3d42.099741626401936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1620768171719!5m2!1sen!2sus"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
       <div class="contact-info">
         <h3>Contact Information</h3>
         <p>📩 alphaone@alphaforecast.com</p>
@@ -80,9 +179,9 @@
         &copy; <span id="year"></span> | Cody Mickelsen | Idaho |
         <a href="byui.edu/online" target="_blank">Online Learning</a>
         <p id="currentdate"></p>
+        <p>Days Since Last Visit: <span id="days"></span></p>
       </div>
     </footer>
-    <script src="js/preston-6.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/gallery.js"></script>
   </body>
 </html>
