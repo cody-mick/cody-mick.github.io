@@ -1,14 +1,4 @@
 @media only screen and (min-width: 60em) {
-  header {
-    grid-template-rows: 250px 150px;
-  }
-
-  .title {
-    grid-row-start: 2;
-    margin-top: 2.5em;
-    margin-bottom: 0;
-  }
-
   nav ul {
     display: flex;
   }
