@@ -14,7 +14,8 @@ table {
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
   letter-spacing: 1px;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  box-shadow: 5px 5px 10px #777;
 }
 
 td,
@@ -26,7 +27,7 @@ th {
 th {
   background-color: #7fb9c2;
   color: black;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
 }
 
@@ -44,7 +45,6 @@ tbody tr:nth-child(odd) td {
 
 tfoot tr td {
   background-color: #7fb9c2;
-  font-size: 0.8em;
 }
 
 tbody tr:nth-child(1) td {
@@ -60,8 +60,4 @@ tbody tr:nth-child(5) td:nth-child(3) {
 
 tbody tr:nth-child(6) td:nth-child(1) {
     font-style: italic;
-}
-
-table {
-    box-shadow: 5px 5px 10px #777;
 }
