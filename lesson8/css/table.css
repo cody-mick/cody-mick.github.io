@@ -61,3 +61,7 @@ tbody tr:nth-child(5) td:nth-child(3) {
 tbody tr:nth-child(6) td:nth-child(1) {
     font-style: italic;
 }
+
+table {
+    box-shadow: 5px 5px 10px #777;
+}
