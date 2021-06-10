@@ -108,3 +108,7 @@ let daysSinceLastVisit = b - a;
 console.log(daysSinceLastVisit);
 
 document.querySelector('#days').textContent = daysSinceLastVisit
+
+function adjustRating(rating) {
+  document.getElementById("severity-value").innerHTML = rating;
+}
