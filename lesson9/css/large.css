@@ -17,9 +17,32 @@
     margin: 0 auto;
   }
 
+  /*--------------------- Preston ----------------------*/
+
+  .article-image {
+    width: 350px;
+  }
+
+  /*--------------------- Gallery ----------------------*/
+
+  div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .gallery-box:hover {
+    transform: scale(1.05);
+    box-shadow: -2px 2px 25px 0px
+  }
+
+  /*---------------------- Form -------------------------*/
+
   form label.sbs {
     padding: 0.4rem 0;
 }
+
+  /*---------------------- Footer -----------------------*/
 
   footer {
     margin: 2em 0 0 0;

@@ -49,20 +49,7 @@ hambutton.addEventListener(
   false
 );
 
-// For finding the amount of days inbetween the last visit to the site.
-// Also display the amount in the footer of the gallery page.
-let a = new Date();
-let b = new Date();
-localStorage.a = a;
-localStorage.b = b;
-a = Date.parse(localStorage.a);
-b = Date.parse(localStorage.b);
-let daysSinceLastVisit = b - a;
-console.log(daysSinceLastVisit);
-
-document.querySelector('#days').textContent = daysSinceLastVisit
-
-// For showing the value on the severity slider in the storm report form.
-function adjustRating(rating) {
-  document.getElementById("severity-value").innerHTML = rating;
-}
+let banner = document.querySelector("#banner");
+document.addEventListener("DOMContentLoaded", () => {
+  if (date.getDay() == 5) banner.style.display = "block"
+});
