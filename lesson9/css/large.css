@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 65em) {
   nav ul {
     display: flex;
   }
@@ -15,6 +15,23 @@
   nav,
   main {
     margin: 0 auto;
+  }
+  /*--------------------- Home ----------------------*/
+
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  .home-cards section {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .home-cards img {
+    width: 350px;
   }
 
   /*--------------------- Preston ----------------------*/

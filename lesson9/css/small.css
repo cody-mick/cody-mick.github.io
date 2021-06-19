@@ -21,10 +21,6 @@ header {
   font-family: "Krona One", sans-serif;
 }
 
-h1 {
-  color: #fff;
-}
-
 h2.title {
   color: var(--color2);
   text-align: center;
@@ -100,6 +96,57 @@ main {
 
 /*--------------------- Home -----------------------------*/
 
+.home-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero-image-home {
+  margin: 1em auto 1em auto;
+  width: 100%;
+}
+
+.home-cards img {
+  padding: 1em 1em 1em 1em;
+  width: 250px;
+}
+
+#soda-card,
+#fish-card,
+#preston-card {
+  border: 0.5px solid black;
+  margin: 1em 1em 1em 1em;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 10px 10px 8px gray;
+}
+
+h2 {
+  font-family: "Krona One", sans-serif;
+  color: var(--color3);
+}
+
+.town-summary div {
+  font-family: "Jura", sans-serif;
+  font-size: large;
+  color: var(--color4);
+}
+
+p {
+  font-family: "Jura", sans-serif;
+}
+
+.top-news {
+  font-family: "Krona One", sans-serif;
+  font-size: x-large;
+  color: var(--color3);
+  padding-top: 1em;
+}
+
+.news-article {
+  font-family: "Jura", sans-serif;
+  padding-top: 1em;
+}
 
 
 /*--------------------- Preston ---------------------------*/
