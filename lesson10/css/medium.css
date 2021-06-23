@@ -55,14 +55,15 @@
     margin-left: 2em;
   }
 
-  .grid {
+  .five-day-forecast {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     margin-left: 2em;
     margin-right: 2em;
+    border: 1px solid #333;
   }
 
-  .data {
+  .fore-temp {
     display: block;
     padding: 0 5px 5px;
     font-size: 1em;
@@ -70,19 +71,15 @@
     font-family: "Jura", sans-serif;
   }
 
-  .col-head {
+  .week-day {
     display: block;
     padding: 5px;
     border-bottom: 1px solid #333;
     text-align: center;
     font-family: "Jura", sans-serif;
   }
-
-  .grid {
-    border: 1px solid #333;
-  }
-
-  .cloudy {
+  
+  .weather-icon {
     width: 50%;
     display: block;
     margin-left: auto;
