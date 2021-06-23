@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Gallery Page for Alpha Forecast" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Jura&family=Krona+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+
+  <title>Storm Center - Alpha Forecast</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/alpha-forecast-correct-logo.png" alt="The Alpha Forecast Logo" />
+    <div class="title">
+      <h1>Alpha Forecast</h1>
+      <div>Where weather is just the beginning.</div>
+    </div>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li>
+        <a class="ham" href="#">&equiv;<span> Menu</span></a>
+      </li>
+      <li><a href="#">Home</a></li>
+      <li><a href="preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li class="active"><a href="#">Storm Center</a></li>
+      <li><a href="gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2 class="title">Report a Storm</h2>
+      <form method="GET" action="thanks.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label class="top">Full Name*<input type="text" name="name" required minlength="5" /></label>
+          <label class="top">Email*<input type="email" name="email" placeholder="someone@somewhere.com" /></label>
+          <label class="top">Phone*<input type="tel" name="phone" required /></label>
+          <label class="top">Zip Code*<input type="number" name="zipcode" required /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Storm Information</legend>
+          <label class="top">Storm Date <input type="date" name="stormDate" /></label>
+          <label class="top">Storm Type</label>
+          <label class="top"><input list="storms" name="stormType" /></label>
+          <datalist id="storms">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+          <label class="storm-severity">Storm Severity
+            <input type="range" name="severity" value="10" min="1" max="10" step="1" list="tickmarks"
+              oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" /><span
+              id="severity-value">10</span></label>
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+          <label class="top">Storm Region
+            <select name="region">
+              <option value="" selected disabled>Select Region...</option>
+              <option value="preston">Preston</option>
+              <option value="soda">Soda Springs</option>
+              <option value="fish">Fish Haven</option>
+            </select></label>
+          <div>User In Danger?</div>
+          <label class="sbs"><input type="radio" name="danger" value="yes" /> Yes</label>
+          <label class="sbs"><input type="radio" name="danger" value="no" /> No</label>
+          <label class="sbs"><input type="radio" name="danger" value="maybe" /> Maybe</label>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Information or Comments</legend>
+          <input class="comments" type="textarea" name="comments" />
+        </fieldset>
+        <input type="submit" class="submitBtn" value="Report Storm" />
+      </form>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p><span>📩 </span> alphaone@alphaforecast.com</p>
+      <p><span>📍</span> 1234 Weather Station Road, Preston, Idaho 83263</p>
+      <p><span>☎️</span> Phone: 208.123.4567</p>
+    </div>
+    <div class="copyright-info">
+      &copy; <span id="year"></span> | Cody Mickelsen | Idaho |
+      <a href="byui.edu/online" target="_blank">Online Learning</a>
+      <p id="currentdate"></p>
+    </div>
+  </footer>
+  <script src="js/lesson8.js"></script>
+</body>
+</html>

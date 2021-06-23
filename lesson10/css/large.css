@@ -1,0 +1,67 @@
+@media only screen and (min-width: 65em) {
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  header,
+  nav,
+  main {
+    margin: 0 auto;
+  }
+  /*--------------------- Home ----------------------*/
+
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  .home-cards section {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .home-cards img {
+    width: 350px;
+  }
+
+  /*--------------------- Preston ----------------------*/
+
+  .article-image {
+    width: 350px;
+  }
+
+  /*--------------------- Gallery ----------------------*/
+
+  div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .gallery-box:hover {
+    transform: scale(1.05);
+    box-shadow: -2px 2px 25px 0px
+  }
+
+  /*---------------------- Form -------------------------*/
+
+  form label.sbs {
+    padding: 0.4rem 0;
+}
+
+  /*---------------------- Footer -----------------------*/
+
+  footer {
+    margin: 2em 0 0 0;
+  }
+}
