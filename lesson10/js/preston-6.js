@@ -64,6 +64,7 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
     document.getElementById('current').textContent = Math.round(jsObject.main.temp);
+    document.getElementById('conditions').textContent = jsObject.weather[0].main;
     document.getElementById('high').textContent = Math.round(jsObject.main.temp_max);
     document.getElementById('low').textContent = Math.round(jsObject.main.temp_min);
     document.getElementById('humidity').textContent = jsObject.main.humidity;
