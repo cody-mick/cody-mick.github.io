@@ -48,7 +48,9 @@
     width: 97%;
   }
 
-  .preston-5day {
+  .preston-5day,
+  .soda-springs-5day,
+  .fish-haven-5day {
     font-family: "Jura", sans-serif;
     display: block;
     margin-bottom: -15px;
@@ -97,7 +99,9 @@
     margin-left: 1em;
   }
 
-  .preston-article {
+  .preston-article,
+  .soda-springs-article,
+  .fish-haven-article {
     margin: 0.25em 2em 0.25em 2em;
   }
 

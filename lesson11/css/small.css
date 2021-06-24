@@ -149,7 +149,7 @@ p {
 }
 
 
-/*--------------------- Preston ---------------------------*/
+/*--------------------- Town Pages ---------------------------*/
 
 .title div {
   margin: -15px auto 20px auto;
@@ -161,11 +161,15 @@ p {
   text-align: center;
 }
 
-.preston-5day {
+.preston-5day,
+.soda-springs-5day,
+.fish-haven-5day {
   display: none;
 }
 
-.preston-article {
+.preston-article,
+.soda-springs-article,
+.fish-haven-article {
   font-family: "Jura", sans-serif;
   padding: 0.5em 5em 0.5em 1em;
   border: 2px solid var(--color3);
@@ -201,7 +205,9 @@ p {
   font-family: "Jura", sans-serif;
 }
 
-.preston-hero {
+.preston-hero,
+.soda-springs-hero,
+.fish-haven-hero {
   position: relative;
 }
 
@@ -222,7 +228,6 @@ p {
   margin-bottom: 0;
   padding-bottom: 10px;
 }
-
 /*--------------------- Gallery ---------------------------*/
 
 div.gallery {
