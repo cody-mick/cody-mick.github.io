@@ -1,0 +1,38 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+    text-align: center;
+    font-family: "Do Hyeon", sans-serif;
+    border: 15px solid gainsboro;
+    box-shadow: 5px 10px 8px gray, -5px -10px 8px gray;
+    background-color: gainsboro;
+}
+
+.card {
+    background-color: rgb(203, 203, 224);
+    padding: 2em;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    font-size: 2em;
+    color: rgb(84, 82, 156);
+}
+
+.card img {
+    width: 250px;
+    box-shadow: 4px 8px 8px gray;
+}
+
+header {
+    text-align: center;
+    color: rgb(84, 82, 156);
+    font-family: "Do Hyeon", sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+}
