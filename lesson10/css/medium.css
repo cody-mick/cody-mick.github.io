@@ -64,6 +64,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 10px #333;
     margin-bottom: 1em;
+    background-color: rgb(207, 207, 207);
   }
 
   .fore-temp {
