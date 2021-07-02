@@ -1,4 +1,4 @@
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 80em) {
   nav ul {
     display: flex;
   }
@@ -28,6 +28,7 @@
     display: block;
     max-width: 400px;
     width: 100%;
+    height: 530px;
   }
 
   .home-cards img {

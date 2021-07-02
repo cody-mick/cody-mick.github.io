@@ -1,4 +1,4 @@
-@media only screen and (min-width: 49.25em) {
+@media only screen and (min-width: 45em) {
   .main-title {
     grid-row-start: 2;
   }
@@ -24,24 +24,23 @@
   }
   /*--------------------- Home ----------------------*/
 
-  .home-cards section {
+  .home-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.preston,
+  div.soda-springs,
+  div.fish-haven {
     display: flex;
     flex-direction: row;
     border-radius: 15px;
   }
 
-  .home-cards section:nth-child(2) {
+  .home-cards div:nth-child(2) {
     flex-direction: row-reverse;
   }
 
-  .home-cards img {
-    width: 600px;
-    border-radius: 15px;
-  }
-
-  .town-summary div {
-    padding: 1em 1em 1em 1em;
-  }
   /*--------------------- Preston ----------------------*/
 
   .weather-summary {

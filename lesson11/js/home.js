@@ -25,32 +25,47 @@ fetch(requestURL)
             motto.textContent = towns[i].motto;
             yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
             population.textContent = 'Population: ' + towns[i].currentPopulation;
-            rainfall.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+            rainfall.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + " inches";
 
             if (i == 0) {
               townImage.setAttribute('src', 'images/soda_springs.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
               town.setAttribute('id', 'soda-card')
+              townDiv.appendChild(h2);
+              townDiv.appendChild(motto);
+              townDiv.appendChild(yearFounded);
+              townDiv.appendChild(population);
+              townDiv.appendChild(rainfall);
+              town.appendChild(townDiv);
+              town.appendChild(townImage);
+              document.querySelector('div.soda-springs').appendChild(town);
             } 
             if (i == 2) {
               townImage.setAttribute('src', 'images/fish_haven.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
               town.setAttribute('id', 'fish-card')
+              townDiv.appendChild(h2);
+              townDiv.appendChild(motto);
+              townDiv.appendChild(yearFounded);
+              townDiv.appendChild(population);
+              townDiv.appendChild(rainfall);
+              town.appendChild(townDiv);
+              town.appendChild(townImage);
+              document.querySelector('div.fish-haven').appendChild(town);
             }
             if (i == 6) {
               townImage.setAttribute('src', 'images/preston_tractor.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
               town.setAttribute('id', 'preston-card')
+              townDiv.appendChild(h2);
+              townDiv.appendChild(motto);
+              townDiv.appendChild(yearFounded);
+              townDiv.appendChild(population);
+              townDiv.appendChild(rainfall);
+              town.appendChild(townDiv);
+              town.appendChild(townImage);
+              document.querySelector('div.preston').appendChild(town);
             }
-            townDiv.appendChild(h2);
-            townDiv.appendChild(motto);
-            townDiv.appendChild(yearFounded);
-            townDiv.appendChild(population);
-            townDiv.appendChild(rainfall);
-            town.appendChild(townDiv);
-            town.appendChild(townImage);        
-        
-        document.querySelector('div.home-cards').appendChild(town);
         }
     }
   });

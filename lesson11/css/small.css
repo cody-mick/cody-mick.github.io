@@ -108,7 +108,7 @@ main {
 
 .home-cards img {
   padding: 1em 1em 1em 1em;
-  width: 250px;
+  width: 350px;
 }
 
 #soda-card,
@@ -119,6 +119,26 @@ main {
   text-align: center;
   border-radius: 15px;
   box-shadow: 10px 10px 8px gray;
+  background-color: rgb(214, 209, 209);
+}
+
+#soda-card img {
+  width: 350px;
+  height: 225px;
+  border-radius: 25px;
+}
+
+#fish-card img {
+  width: 350px;
+  height: 225px;
+  margin-top: 1.5em;
+  border-radius: 25px;
+}
+
+#preston-card img {
+  margin-top: 1.5em;
+  height: 225px;
+  border-radius: 25px;
 }
 
 h2 {
@@ -128,8 +148,9 @@ h2 {
 
 .town-summary div {
   font-family: "Jura", sans-serif;
-  font-size: large;
+  font-size: larger;
   color: var(--color4);
+  font-weight: bold;
 }
 
 p {
