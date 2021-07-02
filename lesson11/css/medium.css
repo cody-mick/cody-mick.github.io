@@ -44,6 +44,19 @@
   }
   /*--------------------- Preston ----------------------*/
 
+  .weather-summary {
+    position: absolute;
+    top: 0.3em;
+    left: 0.5em;
+    border: 1px solid #333;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: var(--color3);
+    opacity: 0.9;
+    color: #FFF;
+    font-family: "Jura", sans-serif;
+    font-size: 1em;
+  }
+
   .hero-image {
     width: 97%;
   }
@@ -53,7 +66,6 @@
   .fish-haven-5day {
     font-family: "Jura", sans-serif;
     display: block;
-    margin-bottom: -15px;
     margin-left: 2em;
   }
 
