@@ -41,6 +41,12 @@
     width: 350px;
   }
 
+  .preston-events,
+  .soda-events,
+  .fish-events {
+    width: 650px;
+  }
+
   /*--------------------- Gallery ----------------------*/
 
   div.gallery {

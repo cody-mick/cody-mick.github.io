@@ -51,7 +51,7 @@ hambutton.addEventListener(
 
 let banner = document.querySelector("#banner");
 document.addEventListener("DOMContentLoaded", () => {
-  if (date.getDay() == 5) banner.style.display = "block"
+  if (date.getDay() == 5) banner.style.display = "block";
 });
 
 // Getting weather info and displaying it on the Preston page
@@ -63,19 +63,24 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    document.getElementById('current').textContent = Math.round(jsObject.main.temp);
-    document.getElementById('conditions').textContent = jsObject.weather[0].main;
-    document.getElementById('high').textContent = Math.round(jsObject.main.temp_max);
-    document.getElementById('low').textContent = Math.round(jsObject.main.temp_min);
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('windspeed').textContent = Math.round(jsObject.wind.speed);
+    document.getElementById("current").textContent = Math.round(
+      jsObject.main.temp
+    );
+    document.getElementById("high").textContent = Math.round(
+      jsObject.main.temp_max
+    );
+    document.getElementById("humidity").textContent = jsObject.main.humidity;
+    document.getElementById("windspeed").textContent = Math.round(
+      jsObject.wind.speed
+    );
   });
 
-  // Getting weather info for the 5 day forecast
+// Getting weather info for the 5 day forecast
 
-  const fiveDayURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=7a8d08997888f7d4fa1ce88d0e56a068";
+const fiveDayURL =
+  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=7a8d08997888f7d4fa1ce88d0e56a068";
 
-  fetch(fiveDayURL)
+fetch(fiveDayURL)
   .then((response) => response.json())
   .then((forecast) => {
     console.log(forecast);
@@ -87,27 +92,60 @@ fetch(apiURL)
         let dayBox = document.createElement("div");
         dayBox.setAttribute("class", "day-box");
         // Get the day of the week and append that first
-        let weekDay = document.createElement('div');
-        weekDay.setAttribute('class', 'week-day');
+        let weekDay = document.createElement("div");
+        weekDay.setAttribute("class", "week-day");
         let dayOfWeek = new Date(forecast.list[x].dt_txt);
         let dayNum = dayOfWeek.getDay();
         weekDay.textContent = weekdays[dayNum];
         dayBox.appendChild(weekDay);
         // Create a child element to get the icon for the forecasted weather
-        let weatherIcon = document.createElement('img');
-        const imagesrc = 'https://openweathermap.org/img/wn/' + forecast.list[x].weather[0].icon + '@2x.png';
+        let weatherIcon = document.createElement("img");
+        const imagesrc =
+          "https://openweathermap.org/img/wn/" +
+          forecast.list[x].weather[0].icon +
+          "@2x.png";
         const desc = forecast.list[x].weather.description;
-        weatherIcon.setAttribute('class', 'weather-icon');
-        weatherIcon.setAttribute('src', imagesrc);
-        weatherIcon.setAttribute('alt', desc);
+        weatherIcon.setAttribute("class", "weather-icon");
+        weatherIcon.setAttribute("src", imagesrc);
+        weatherIcon.setAttribute("alt", desc);
         dayBox.appendChild(weatherIcon);
         // Create a child element to hold the temperature for the day
         let foreTemp = document.createElement("p");
         foreTemp.setAttribute("class", "fore-temp");
-        foreTemp.innerHTML = Math.round(forecast.list[x].main.temp_max) + " &deg;F";
+        foreTemp.innerHTML =
+          Math.round(forecast.list[x].main.temp_max) + " &deg;F";
         dayBox.appendChild(foreTemp);
         // Append the "day-box" to the parent section in the HTML
         document.querySelector(".five-day-forecast").appendChild(dayBox);
+      }
+    }
+  });
+
+const eventURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(eventURL)
+  .then(function (response) {
+    return response.json();
+  })
+
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+    const towns = jsonObject["towns"];
+    for (let i = 0; i < towns.length; i++) {
+      if (i == 6) {
+        let prestonEvent = document.createElement("p");
+        let secondPrestonEvent = document.createElement("p");
+        let thirdPrestonEvent = document.createElement("p");
+
+        prestonEvent.textContent = towns[i].events[0];
+        secondPrestonEvent.textContent = towns[i].events[1];
+        thirdPrestonEvent.textContent = towns[i].events[2];
+
+        let prestonEventsBox = document.querySelector(".preston-events");
+
+        prestonEventsBox.appendChild(prestonEvent);
+        prestonEventsBox.appendChild(secondPrestonEvent);
+        prestonEventsBox.appendChild(thirdPrestonEvent);
       }
     }
   });

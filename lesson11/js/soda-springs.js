@@ -64,9 +64,7 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
     document.getElementById('current').textContent = Math.round(jsObject.main.temp);
-    document.getElementById('conditions').textContent = jsObject.weather[0].main;
     document.getElementById('high').textContent = Math.round(jsObject.main.temp_max);
-    document.getElementById('low').textContent = Math.round(jsObject.main.temp_min);
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('windspeed').textContent = Math.round(jsObject.wind.speed);
   });
@@ -108,6 +106,35 @@ fetch(apiURL)
         dayBox.appendChild(foreTemp);
         // Append the "day-box" to the parent section in the HTML
         document.querySelector(".five-day-forecast").appendChild(dayBox);
+      }
+    }
+  });
+
+  const eventURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(eventURL)
+  .then(function (response) {
+    return response.json();
+  })
+
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+    const towns = jsonObject["towns"];
+    for (let i = 0; i < towns.length; i++) {
+      if (i == 0) {
+        let sodaEvent = document.createElement("p");
+        let secondSodaEvent = document.createElement("p");
+        let thirdSodaEvent = document.createElement("p");
+
+        sodaEvent.textContent = towns[i].events[0];
+        secondSodaEvent.textContent = towns[i].events[1];
+        thirdSodaEvent.textContent = towns[i].events[2];
+
+        let sodaEventsBox = document.querySelector(".soda-events");
+
+        sodaEventsBox.appendChild(sodaEvent);
+        sodaEventsBox.appendChild(secondSodaEvent);
+        sodaEventsBox.appendChild(thirdSodaEvent);
       }
     }
   });

@@ -64,16 +64,14 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
     document.getElementById('current').textContent = Math.round(jsObject.main.temp);
-    document.getElementById('conditions').textContent = jsObject.weather[0].main;
     document.getElementById('high').textContent = Math.round(jsObject.main.temp_max);
-    document.getElementById('low').textContent = Math.round(jsObject.main.temp_min);
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('windspeed').textContent = Math.round(jsObject.wind.speed);
   });
 
   // Getting weather info for the 5 day forecast
 
-  const fiveDayURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=7a8d08997888f7d4fa1ce88d0e56a068";
+  const fiveDayURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.03709964972492&lon=-111.39598458651903&units=imperial&appid=7a8d08997888f7d4fa1ce88d0e56a068";
 
   fetch(fiveDayURL)
   .then((response) => response.json())
@@ -108,6 +106,38 @@ fetch(apiURL)
         dayBox.appendChild(foreTemp);
         // Append the "day-box" to the parent section in the HTML
         document.querySelector(".five-day-forecast").appendChild(dayBox);
+      }
+    }
+  });
+
+  const eventURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(eventURL)
+  .then(function (response) {
+    return response.json();
+  })
+
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+    const towns = jsonObject["towns"];
+    for (let i = 0; i < towns.length; i++) {
+      if (i == 2) {
+        let fishEvent = document.createElement("p");
+        let secondFishEvent = document.createElement("p");
+        let thirdFishEvent = document.createElement("p");
+        let fourthFishEvent = document.createElement("p");
+
+        fishEvent.textContent = towns[i].events[0];
+        secondFishEvent.textContent = towns[i].events[1];
+        thirdFishEvent.textContent = towns[i].events[2];
+        fourthFishEvent.textContent = towns[i].events[3];
+
+        let fishEventsBox = document.querySelector(".fish-events");
+
+        fishEventsBox.appendChild(fishEvent);
+        fishEventsBox.appendChild(secondFishEvent);
+        fishEventsBox.appendChild(thirdFishEvent);
+        fishEventsBox.appendChild(fourthFishEvent)
       }
     }
   });
