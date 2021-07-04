@@ -25,20 +25,37 @@
   /*--------------------- Home ----------------------*/
 
   .home-cards {
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    margin-top: -1.5rem;
   }
 
-  div.preston,
-  div.soda-springs,
-  div.fish-haven {
+  .home-cards section {
     display: flex;
     flex-direction: row;
-    border-radius: 15px;
   }
 
-  .home-cards div:nth-child(2) {
+  .preston-card div {
+    margin-left: 0.5em;
+  }
+
+  .fish-card div {
+    margin-left: 2em;
+    margin-top: 3em;
+  }
+
+  .fish-card img {
+    margin-left: 5em;
+  }
+
+  .home-cards section:nth-child(2) {
     flex-direction: row-reverse;
+  }
+
+  .home-cards img {
+    margin-bottom: 0;
+    max-height: 300px;
+    max-width: 400px;
+    width: 100%;
   }
 
   /*--------------------- Preston ----------------------*/
@@ -51,7 +68,7 @@
     padding: 0.5em 1em 0.5em 1em;
     background-color: var(--color3);
     opacity: 0.9;
-    color: #FFF;
+    color: #fff;
     font-family: "Jura", sans-serif;
     font-size: 1em;
   }
@@ -102,7 +119,7 @@
     text-align: center;
     font-family: "Jura", sans-serif;
   }
-  
+
   .weather-icon {
     width: 50%;
     display: block;

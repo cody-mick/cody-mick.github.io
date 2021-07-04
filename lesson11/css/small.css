@@ -96,11 +96,6 @@ main {
 
 /*--------------------- Home -----------------------------*/
 
-.home-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .hero-image-home {
   margin: 1em auto 1em auto;
   width: 100%;
@@ -111,9 +106,9 @@ main {
   width: 350px;
 }
 
-#soda-card,
-#fish-card,
-#preston-card {
+.soda-card,
+.fish-card,
+.preston-card {
   border: 0.5px solid black;
   margin: 1em 1em 1em 1em;
   text-align: center;
@@ -122,20 +117,16 @@ main {
   background-color: rgb(214, 209, 209);
 }
 
-#soda-card img {
-  width: 350px;
-  height: 225px;
+.soda-card img {
   border-radius: 25px;
 }
 
-#fish-card img {
-  width: 350px;
-  height: 225px;
+.fish-card img {
   margin-top: 1.5em;
   border-radius: 25px;
 }
 
-#preston-card img {
+.preston-card img {
   margin-top: 1.5em;
   height: 225px;
   border-radius: 25px;

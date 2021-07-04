@@ -11,7 +11,6 @@ fetch(requestURL)
     const towns = jsonObject["towns"];
     for (let i = 0; i < towns.length; i++) {
         if (i == 0 || i == 2 || i == 6) {
-            let town = document.createElement('section');
             let townDiv = document.createElement('div');
             townDiv.setAttribute("class", "town-summary");
             let h2 = document.createElement("h2");
@@ -30,7 +29,7 @@ fetch(requestURL)
             if (i == 0) {
               townImage.setAttribute('src', 'images/soda_springs.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
-              town.setAttribute('id', 'soda-card')
+              let town = document.querySelector("section.soda-card");
               townDiv.appendChild(h2);
               townDiv.appendChild(motto);
               townDiv.appendChild(yearFounded);
@@ -38,12 +37,11 @@ fetch(requestURL)
               townDiv.appendChild(rainfall);
               town.appendChild(townDiv);
               town.appendChild(townImage);
-              document.querySelector('div.soda-springs').appendChild(town);
             } 
             if (i == 2) {
               townImage.setAttribute('src', 'images/fish_haven.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
-              town.setAttribute('id', 'fish-card')
+              let town = document.querySelector("section.fish-card");
               townDiv.appendChild(h2);
               townDiv.appendChild(motto);
               townDiv.appendChild(yearFounded);
@@ -51,12 +49,11 @@ fetch(requestURL)
               townDiv.appendChild(rainfall);
               town.appendChild(townDiv);
               town.appendChild(townImage);
-              document.querySelector('div.fish-haven').appendChild(town);
             }
             if (i == 6) {
               townImage.setAttribute('src', 'images/preston_tractor.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
-              town.setAttribute('id', 'preston-card')
+              let town = document.querySelector("section.preston-card");
               townDiv.appendChild(h2);
               townDiv.appendChild(motto);
               townDiv.appendChild(yearFounded);
@@ -64,7 +61,6 @@ fetch(requestURL)
               townDiv.appendChild(rainfall);
               town.appendChild(townDiv);
               town.appendChild(townImage);
-              document.querySelector('div.preston').appendChild(town);
             }
         }
     }
