@@ -4,17 +4,21 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #4ecdc4;
+    background-color: #6EA4BF;
     font-family: "Raleway", sans-serif;
 }
 
 .logo {
-    color: rgb(34, 34, 34);
+    color: black;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -24,6 +28,7 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 50%;
+    z-index: 9999;
 }
 
 .nav-links li {
@@ -31,11 +36,11 @@ nav {
 }
 
 .nav-links a {
-    color: rgb(34, 34, 34);
+    color: black;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .burger {
@@ -46,21 +51,18 @@ nav {
 .burger div {
     width: 30px;
     height: 3px;
-    background-color: rgb(34, 34, 34);
+    background-color: black;
     margin: 5px;
     transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
     .nav-links {
         position: absolute;
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #4ecdc4;
+        background-color: #6EA4BF;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -104,4 +106,115 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*---------------- Home Page Hero ----------------*/
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/rigby-homepage-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.hero-button {
+    background-color: #6EA4BF;
+    color: black;
+    border: 1px solid #6EA4BF;
+    border-radius: 25px;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #fa7d7d;
+    border: 1px solid #fa7d7d;
+}
+
+/*------------- Footer --------------*/
+
+footer {
+    background-color: #1A535C;
+    color: rgb(226, 226, 226);
+    font-family: "Quicksand", sans-serif;
+}
+
+/*----------- Weather Alert --------*/
+.weather-alert {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    height: 3rem;
+    width: 95%;
+    text-align: center;
+    background-color: #f75555;
+}
+
+.alert-banner {
+    display: flex;
+    flex-direction: row;
+}
+
+.close-alert {
+    background-color: #F75555;
+    width: 5%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*----------- Business Spotlight -------------*/
+
+.business-spotlight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.business-logo {
+    width: 300px;
+}
+
+.business-motto {
+    text-align: center;
 }
