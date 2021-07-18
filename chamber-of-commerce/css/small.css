@@ -179,6 +179,7 @@ nav {
     flex-direction: column;
     align-items: center;
     margin: 2rem;
+    font-family: "Quicksand", sans-serif;
 }
 
 .current-weather {
@@ -205,14 +206,11 @@ nav {
     border: 1px solid black;
     width: 90vw;
     text-align: center;
+    text-transform: capitalize;
 }
 
-/*------------- Footer --------------*/
-
-footer {
-    background-color: #1A535C;
-    color: rgb(226, 226, 226);
-    font-family: "Quicksand", sans-serif;
+.forecast-weather-day {
+    padding: 1rem;
 }
 
 /*----------- Weather Alert --------*/
@@ -239,7 +237,17 @@ footer {
     cursor: pointer;
 }
 
+/*----------- Chamber Goals ------------------*/
+
+.chamber-goals h2 {
+    font-family: "Raleway", sans-serif;
+}
+
 /*----------- Business Spotlight -------------*/
+
+.business-spotlight h2 {
+    font-family: "Raleway", sans-serif;
+}
 
 .business-spotlight {
     display: flex;
@@ -254,4 +262,19 @@ footer {
 
 .business-motto {
     text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+/*--------- Upcoming Events ---------*/
+
+.upcoming-events h2 {
+    font-family: "Raleway", sans-serif;
+}
+
+/*------------- Footer --------------*/
+
+footer {
+    background-color: #1A535C;
+    color: rgb(226, 226, 226);
+    font-family: "Quicksand", sans-serif;
 }

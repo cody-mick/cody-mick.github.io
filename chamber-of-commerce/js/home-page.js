@@ -98,6 +98,7 @@ fetch(url)
     for (let i = 1; i < 4; i++) {
       // Get the names of the next three days and add them to the individual divs
       let dayWeather = document.createElement("div");
+      dayWeather.setAttribute('class', 'forecast-weather-day')
       let dayMilli = forecast.daily[i].dt * 1000;
       let dayDate = new Date(dayMilli);
       let dayNameDiv = document.createElement("div");
@@ -131,9 +132,9 @@ fetch(url)
 
       // Append all information to the dayWeather div
       dayWeather.appendChild(dayNameDiv);
-      dayWeather.appendChild(dayTemp);
-      dayWeather.appendChild(conditions);
       dayWeather.appendChild(icon);
+      dayWeather.appendChild(conditions);
+      dayWeather.appendChild(dayTemp);
 
       // Append the dayWeather div to the three-day-weather div
       threeDayDiv.appendChild(dayWeather);
