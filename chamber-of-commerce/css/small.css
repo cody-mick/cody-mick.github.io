@@ -22,6 +22,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    padding: 0.5rem;
 }
 
 .nav-links {
@@ -113,7 +114,7 @@ nav {
 .hero {
     position: relative;
     width: 100vw;
-    height: 75vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,6 +172,41 @@ nav {
     border: 1px solid #fa7d7d;
 }
 
+/*--------- Weather Section ---------*/
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.current-weather {
+    width: 90vw;
+    height: 250px;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-icon {
+    width: 180px;
+}
+
+.current-con {
+    text-transform: capitalize;
+}
+
+.three-day-weather {
+    border: 1px solid black;
+    width: 90vw;
+    text-align: center;
+}
+
 /*------------- Footer --------------*/
 
 footer {
@@ -187,6 +223,7 @@ footer {
     width: 95%;
     text-align: center;
     background-color: #f75555;
+    padding-bottom: 4rem;
 }
 
 .alert-banner {
@@ -206,7 +243,7 @@ footer {
 
 .business-spotlight {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
