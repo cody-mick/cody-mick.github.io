@@ -108,7 +108,7 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
+/*--------------------- Home Page --------------------*/
 /*---------------- Home Page Hero ----------------*/
 
 .hero {
@@ -178,20 +178,26 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
+    margin: 1rem;
     font-family: "Quicksand", sans-serif;
+}
+
+.weather h2 {
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 1rem;
 }
 
 .current-weather {
     width: 90vw;
     height: 250px;
-    border: 1px solid black;
     margin-bottom: 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 3px 3px 10px gray;
+    background-color: rgb(226, 226, 226);
 }
 
 .current-icon {
@@ -203,10 +209,11 @@ nav {
 }
 
 .three-day-weather {
-    border: 1px solid black;
     width: 90vw;
     text-align: center;
     text-transform: capitalize;
+    box-shadow: 3px 3px 10px gray;
+    background-color: rgb(226, 226, 226);
 }
 
 .forecast-weather-day {
@@ -241,6 +248,18 @@ nav {
 
 .chamber-goals h2 {
     font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+
+.chamber-purpose {
+    font-family: "Quicksand", sans-serif;
+    padding: 0.5rem;
+}
+
+.purpose-image {
+    padding: 0.5rem;
+    width: 360px;
 }
 
 /*----------- Business Spotlight -------------*/
@@ -258,17 +277,69 @@ nav {
 
 .business-logo {
     width: 300px;
+    padding: 2rem;
 }
 
 .business-motto {
     text-align: center;
     font-family: "Quicksand", sans-serif;
+    font-size: 20px;
 }
 
 /*--------- Upcoming Events ---------*/
 
+.upcoming-events {
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 3px 3px 10px gray;
+    background-color: rgb(226, 226, 226);
+}
+
 .upcoming-events h2 {
     font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.underline {
+    width: 220px;
+    height: 2px;
+    background-color: #6EA4BF;
+    margin: 0 auto;
+    margin-top: 0.175rem;
+}
+
+.event-one,
+.event-two,
+.event-three {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    margin: 0.5rem;
+}
+
+/*---------------- Rigby Page -----------------*/
+
+.rigby-title {
+    font-family: "Raleway", sans-serif;
+    margin: 1rem;
+}
+
+.city-info {
+    font-family: "Quicksand", sans-serif;
+    margin: 1rem;
+}
+
+.philo {
+    width: 200px;
+}
+
+.rhs {
+    width: 300px;
+}
+
+.potato {
+    width: 250px;
+    
 }
 
 /*------------- Footer --------------*/
@@ -277,4 +348,31 @@ footer {
     background-color: #1A535C;
     color: rgb(226, 226, 226);
     font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 1rem;
+}
+
+.copy-info {
+    margin: 0.5rem;
+}
+
+.contact-information {
+    margin: 1rem;
+}
+
+.attributions {
+    font-size: 10px;
+    margin: 1rem;
+}
+
+.rigby-map {
+    width: 90vw;
+    margin: 0 auto;
 }
