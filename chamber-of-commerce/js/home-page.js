@@ -42,28 +42,36 @@ fetch(url)
     // Verify the data was successfully retrieved.
     console.log(forecast);
 
-    console.log(forecast.alerts[0].event);
-    console.log(forecast.alerts[0].start);
-    console.log(forecast.alerts[0].end);
-    // Converstion from timestamp into actual date.
-    let startTimeStamp = forecast.alerts[0].start;
-    let endTimeStamp = forecast.alerts[0].end;
-
-    let startTimeMilli = startTimeStamp * 1000;
-    let endTimeMilli = endTimeStamp * 1000;
-
-    let startDate = new Date(startTimeMilli);
-    let endDate = new Date(endTimeMilli);
-
-    let hReadableStart = startDate.toLocaleString();
-    let hReadableEnd = endDate.toLocaleString();
-
-    let warningType = document.querySelector(".warning-type");
-    warningType.textContent = forecast.alerts[0].event;
-    let start = document.querySelector(".alert-start");
-    let end = document.querySelector(".alert-end");
-    start.textContent = hReadableStart;
-    end.textContent = hReadableEnd;
+    // Find out if the forecast data contains an alert
+    // if it does, run the following, else, set warning
+    // to display none
+    if (forecast.hasOwnProperty(alert)) {
+      console.log(forecast.alerts[0].event);
+      console.log(forecast.alerts[0].start);
+      console.log(forecast.alerts[0].end);
+      // Converstion from timestamp into actual date.
+      let startTimeStamp = forecast.alerts[0].start;
+      let endTimeStamp = forecast.alerts[0].end;
+  
+      let startTimeMilli = startTimeStamp * 1000;
+      let endTimeMilli = endTimeStamp * 1000;
+  
+      let startDate = new Date(startTimeMilli);
+      let endDate = new Date(endTimeMilli);
+  
+      let hReadableStart = startDate.toLocaleString();
+      let hReadableEnd = endDate.toLocaleString();
+  
+      let warningType = document.querySelector(".warning-type");
+      warningType.textContent = forecast.alerts[0].event;
+      let start = document.querySelector(".alert-start");
+      let end = document.querySelector(".alert-end");
+      start.textContent = hReadableStart;
+      end.textContent = hReadableEnd;
+    } else {
+      let alertBanner = document.querySelector('.alert-banner');
+      alertBanner.style.display = "none";
+    }
 
     // Code for weather section
     let degSymbol = "\u00B0";

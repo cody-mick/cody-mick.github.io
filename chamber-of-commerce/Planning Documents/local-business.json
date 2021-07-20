@@ -1,0 +1,106 @@
+{
+    "name" : "Chamber of Commerce Directory",
+    "town" : "Rigby",
+    "state" : "Idaho",
+    "members" : [
+        {
+            "business" : "Rigby Produce",
+            "address" : {
+                "street" : "396 N Yellowstone Hwy",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.745.6626",
+            "website" : "https://www.rigbyproduce.com"
+        },
+        {
+            "business" : "Idaho First Mortgage",
+            "address" : {
+                "street" : "115 N Clark St",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.745.6831",
+            "website" : "https://www.idahofirstmortgage.com"
+        },
+        {
+            "business" : "EyeCare of Rigby",
+            "address" : {
+                "street" : "711 Rigby Lake Dr, Ste. 301",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.745.0181",
+            "website" : "https://eyecareofrigby.com"
+        },
+        {
+            "business" : "JAB Construction, Inc",
+            "address" : {
+                "street" : "652 N 4118 E",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.745.7996",
+            "website" : "https://www.jabconst.com"
+        },
+        {
+            "business" : "Jefferson Star",
+            "address" : {
+                "street" : "134 W Main",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.745.8701",
+            "website" : "https://www.jeffersonstarnews.com"
+        },
+        {
+            "business" : "Journey's DDA",
+            "address" : {
+                "street" : "111 E Main",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.497.0900",
+            "website" : "https://www.journeysdda.com"
+        },
+        {
+            "business" : "KLIM, USA",
+            "address" : {
+                "street" : "3753 Countyline Rd",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.552.7433",
+            "website" : "https://www.klim.com"
+        },
+        {
+            "business" : "Lil' Mikes Smokin BBQ",
+            "address" : {
+                "street" : "116 S Clark St",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.534.1802",
+            "website" : "https://www.lilmikesbbq.com"
+        },
+        {
+            "business" : "Tadd Jenkins Auto Group",
+            "address" : {
+                "street" : "409 Farnsworth Way",
+                "town" : "Rigby",
+                "state" : "Idaho",
+                "zip" : "83442"
+            },
+            "phone" : "208.745.6634",
+            "website" : "https://www.tjchev.com"
+        }
+    ]
+}
