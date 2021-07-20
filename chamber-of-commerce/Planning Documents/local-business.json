@@ -12,7 +12,8 @@
                 "zip" : "83442"
             },
             "phone" : "208.745.6626",
-            "website" : "https://www.rigbyproduce.com"
+            "website" : "https://www.rigbyproduce.com",
+            "logo" : "images/rigby-produce-logo.png"
         },
         {
             "business" : "Idaho First Mortgage",
@@ -23,7 +24,8 @@
                 "zip" : "83442"
             },
             "phone" : "208.745.6831",
-            "website" : "https://www.idahofirstmortgage.com"
+            "website" : "https://www.idahofirstmortgage.com",
+            "logo" : "images/idaho-first-logo.png"
         },
         {
             "business" : "EyeCare of Rigby",
@@ -34,7 +36,8 @@
                 "zip" : "83442"
             },
             "phone" : "208.745.0181",
-            "website" : "https://eyecareofrigby.com"
+            "website" : "https://eyecareofrigby.com",
+            "logo" : "images/eyecare-logo.png"
         },
         {
             "business" : "JAB Construction, Inc",
@@ -45,7 +48,9 @@
                 "zip" : "83442"
             },
             "phone" : "208.745.7996",
-            "website" : "https://www.jabconst.com"
+            "website" : "https://www.jabconst.com",
+            "logo" : "images/jab-logo.png"
+
         },
         {
             "business" : "Jefferson Star",
@@ -56,7 +61,8 @@
                 "zip" : "83442"
             },
             "phone" : "208.745.8701",
-            "website" : "https://www.jeffersonstarnews.com"
+            "website" : "https://www.jeffersonstarnews.com",
+            "logo" : "images/js-logo.png"
         },
         {
             "business" : "Journey's DDA",
@@ -67,7 +73,8 @@
                 "zip" : "83442"
             },
             "phone" : "208.497.0900",
-            "website" : "https://www.journeysdda.com"
+            "website" : "https://www.journeysdda.com",
+            "logo" : "images/journeys-dda-logo.png"
         },
         {
             "business" : "KLIM, USA",
@@ -78,7 +85,8 @@
                 "zip" : "83442"
             },
             "phone" : "208.552.7433",
-            "website" : "https://www.klim.com"
+            "website" : "https://www.klim.com",
+            "logo" : "images/klim-logo.png"
         },
         {
             "business" : "Lil' Mikes Smokin BBQ",
@@ -89,7 +97,8 @@
                 "zip" : "83442"
             },
             "phone" : "208.534.1802",
-            "website" : "https://www.lilmikesbbq.com"
+            "website" : "https://www.lilmikesbbq.com",
+            "logo" : "images/lil-mikes-logo.png"
         },
         {
             "business" : "Tadd Jenkins Auto Group",
@@ -100,7 +109,8 @@
                 "zip" : "83442"
             },
             "phone" : "208.745.6634",
-            "website" : "https://www.tjchev.com"
+            "website" : "https://www.tjchev.com",
+            "logo" : "images/tadd-jenkins-logo.png"
         }
     ]
 }

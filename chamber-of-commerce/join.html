@@ -41,10 +41,114 @@
       </div>
     </nav>
     <main>
-
+      <h1 class="join-title">Join the Chamber</h1>
+      <form method="GET" action="thanks.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label class="top">First Name*<input type="text" name="first-name" required/></label>
+          <label class="top">Last Name*<input type="text" name="last-name" required/></label>
+          <label class="top">Title<input type="text" name="title"/></label>
+          <label class="top">Email*<input type="email" name="email" placeholder="someone@somewhere.com" required/></label>
+          <label class="top">Cell Phone<input type="tel" name="cell-phone" placeholder="(555) 555-5555"/></label>
+        </fieldset>
+        <fieldset>
+          <legend>Business Information</legend>
+          <label class="top">Business Name<input type="text" name="business-name" required/></label>
+          <h4 class="business-address">Business Address</h3>
+          <label class="top">Street<input type="text" name="street"/></label>
+          <label class="top">City<input type="text" name="city"/></label>
+          <label class="top">State<input type="text" name="state"/></label>
+          <label class="top">ZIP Code<input type="text" name="zip"/></label>
+          <label class="top">Website<input type="url" name="website"/></label>
+          <label class="top">Business Description<textarea class="desc" name="business-description"></textarea></label>
+        </fieldset>
+        <fieldset class="tier">
+          <legend>Membership Tier</legend>
+            <select name="membership-tier">
+              <option value="" selected disabled>Select Membership Tier...</option>
+              <option value="nonprofit">Non-Profit ($100)</option>
+              <option value="bronze">Bronze ($200)</option>
+              <option value="silver">Silver ($400)</option>
+              <option value="gold">Gold ($1000)</option>
+            </select>
+          <div class="tier-details">
+            Non-Profit Tier: The Non-Profit Tier is designed for business that are just as the name implies, non-profit.
+            Included in this tier is being listed in the Chamber Directory, and up 5 social media posts per month.
+            <br><br>
+            Bronze: The Bronze Tier is for small businesses looking to get ahead of the game. This includes everything from
+            the nonprofit tier, plus an additional 5 social media posts per month, and a select number of tickets to business
+            trainings put on by the Chamber.
+            <br><br>
+            Silver: The Silver Tier includes everything from the previous tiers, plus an additional 5 social media posts, giving
+            a total of 15 posts per month, as well as an increased number of tickets to business trainings, luncheon tickets (when available),
+            and a small advertisement space on our website.
+            <br><br>
+            Gold: The Gold Tier is the ultimate package. Everythin from the previous tiers is included, and again, with 5 extra social media posts.
+            Bringing the total to 20/month. This tier also includes a premium advertisement spot on the chamber website, the most tickets to trainings
+            and luncheons, and premium advertisement space at community and local events.
+          </div>
+          <input type="submit" class="submitBtn" value="Join" />
+        </fieldset>
+      </form>
     </main>
     <footer>
-
+      <div class="contact-information">
+        <p>Rigby Chamber of Commerce</p>
+        <p>P.O. Box 327, Rigby, ID 83442</p>
+        <p>208-745-8111 ext. 21</p>
+        <p>inforequest@rigbychamber.com</p>
+      </div>
+      <div class="copy-info">
+        &copy; <span class="year"></span> | Cody Mickelsen | BYU-Idaho
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="blank"
+          ><img
+            src="images/social-icons/png/023-facebook.png"
+            alt="Facebook Icon"
+            width="50px"
+        /></a>
+        <a href="https://www.instagram.com" target="blank"
+          ><img
+            src="images/social-icons/png/044-instagram.png"
+            alt="Instagram Icon"
+            width="50px"
+        /></a>
+        <a href="https://www.twitch.com" target="blank"
+          ><img
+            src="images/social-icons/png/094-twitch.png"
+            alt="Twitch Icon"
+            width="50px"
+        /></a>
+        <a href="https://www.youtube.com" target="blank"
+          ><img
+            src="images/social-icons/png/116-youtube.png"
+            alt="YouTube Icon"
+            width="50px"
+        /></a>
+      </div>
+      <p class="modinfo">
+        Site Last Modified: <span class="last-modified"></span>
+      </p>
+      <div class="attributions">
+        Icons made by
+        <a
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        <div>
+          Some content taken from
+          <a href="https://www.rigbychamber.com">Rigby Chamber of Commerce</a>
+        </div>
+        <div>
+          Weather data from <a href="https://openweathermap.org/">OpenWeather</a>
+        </div>
+      </div>
     </footer>
     <script src="js/home-page.js"></script>
   </body>

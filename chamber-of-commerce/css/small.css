@@ -1,378 +1,480 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #6EA4BF;
-    font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #6ea4bf;
+  font-family: "Raleway", sans-serif;
 }
 
 .logo {
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-    padding: 0.5rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  padding: 0.5rem;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    z-index: 9999;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  z-index: 9999;
 }
 
 .nav-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links a {
-    color: black;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 18px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .burger {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .burger div {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #6EA4BF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #6ea4bf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
 
-    .nav-links li {
-        opacity: 0;
-    }
+  .nav-links li {
+    opacity: 0;
+  }
 
-    .burger {
-        display: block;
-    }
+  .burger {
+    display: block;
+  }
 }
 
 .nav-active {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 /*--------------------- Home Page --------------------*/
 /*---------------- Home Page Hero ----------------*/
 
 .hero {
-    position: relative;
-    width: 100vw;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/rigby-homepage-hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    filter: brightness(60%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/rigby-homepage-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
 }
 
 .hero-content {
-    position: relative;
-    font-family: "Raleway", sans-serif;
-    color: rgb(226, 226, 226);
-    text-align: center;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  color: rgb(226, 226, 226);
+  text-align: center;
 }
 
 .hero-title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 0;
-    margin-top: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .hero-subtitle {
-    font-size: 2rem;
-    font-weight: 200;
-    margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
 }
 
 .hero-button {
-    background-color: #6EA4BF;
-    color: black;
-    border: 1px solid #6EA4BF;
-    border-radius: 25px;
-    margin-top: 5rem;
-    padding: 0.9375rem 1.875rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    cursor: pointer;
+  background-color: #6ea4bf;
+  color: black;
+  border: 1px solid #6ea4bf;
+  border-radius: 25px;
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .hero-button:hover {
-    background-color: #fa7d7d;
-    border: 1px solid #fa7d7d;
+  background-color: #fa7d7d;
+  border: 1px solid #fa7d7d;
 }
 
 /*--------- Weather Section ---------*/
 
 .weather {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 .weather h2 {
-    font-family: "Raleway", sans-serif;
-    padding-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 1rem;
 }
 
 .current-weather {
-    width: 90vw;
-    height: 250px;
-    margin-bottom: 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 3px 3px 10px gray;
-    background-color: rgb(226, 226, 226);
+  width: 90vw;
+  height: 250px;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
 }
 
 .current-icon {
-    width: 180px;
+  width: 180px;
 }
 
 .current-con {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .three-day-weather {
-    width: 90vw;
-    text-align: center;
-    text-transform: capitalize;
-    box-shadow: 3px 3px 10px gray;
-    background-color: rgb(226, 226, 226);
+  width: 90vw;
+  text-align: center;
+  text-transform: capitalize;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
 }
 
 .forecast-weather-day {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /*----------- Weather Alert --------*/
 .weather-alert {
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold;
-    height: 3rem;
-    width: 95%;
-    text-align: center;
-    background-color: #f75555;
-    padding-bottom: 4rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  height: 3rem;
+  width: 95%;
+  text-align: center;
+  background-color: #f75555;
+  padding-bottom: 4rem;
 }
 
 .alert-banner {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .close-alert {
-    background-color: #F75555;
-    width: 5%;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  background-color: #f75555;
+  width: 5%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 /*----------- Chamber Goals ------------------*/
 
 .chamber-goals h2 {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    padding: 1rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 1rem;
 }
 
 .chamber-purpose {
-    font-family: "Quicksand", sans-serif;
-    padding: 0.5rem;
+  font-family: "Quicksand", sans-serif;
+  padding: 0.5rem;
 }
 
 .purpose-image {
-    padding: 0.5rem;
-    width: 360px;
+  padding: 0.5rem;
+  width: 360px;
 }
 
 /*----------- Business Spotlight -------------*/
 
 .business-spotlight h2 {
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .business-spotlight {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .business-logo {
-    width: 300px;
-    padding: 2rem;
+  width: 300px;
+  padding: 2rem;
 }
 
 .business-motto {
-    text-align: center;
-    font-family: "Quicksand", sans-serif;
-    font-size: 20px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
 }
 
 /*--------- Upcoming Events ---------*/
 
 .upcoming-events {
-    padding: 0.5rem;
-    margin: 1rem;
-    box-shadow: 3px 3px 10px gray;
-    background-color: rgb(226, 226, 226);
+  padding: 0.5rem;
+  margin: 1rem;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
 }
 
 .upcoming-events h2 {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    padding-top: 1rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .underline {
-    width: 220px;
-    height: 2px;
-    background-color: #6EA4BF;
-    margin: 0 auto;
-    margin-top: 0.175rem;
+  width: 220px;
+  height: 2px;
+  background-color: #6ea4bf;
+  margin: 0 auto;
+  margin-top: 0.175rem;
 }
 
 .event-one,
 .event-two,
 .event-three {
-    text-align: center;
-    font-family: "Quicksand", sans-serif;
-    margin: 0.5rem;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  margin: 0.5rem;
 }
 
 /*---------------- Rigby Page -----------------*/
 
 .rigby-title {
-    font-family: "Raleway", sans-serif;
-    margin: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin: 1rem;
 }
 
 .city-info {
-    font-family: "Quicksand", sans-serif;
-    margin: 1rem;
+  font-family: "Quicksand", sans-serif;
+  margin: 1rem;
 }
 
 .philo {
-    width: 200px;
+  width: 200px;
 }
 
 .rhs {
-    width: 300px;
+  width: 300px;
 }
 
 .potato {
-    width: 250px;
-    
+  width: 250px;
+}
+
+/*------------ Join -----------------*/
+
+.join-title {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+fieldset {
+    margin: 1rem;
+    border-radius: 15px;
+    background-color: rgb(238, 238, 238);
+}
+
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+form label.top input {
+  -webkit-appearance: none;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #6ea4bf;
+  padding: 0.25rem;
+  background-color: rgb(238, 238, 238);
+  width: 95%;
+}
+
+textarea {
+  -webkit-appearance: none;
+  display: block;
+  border: 1px solid #6ea4bf;
+  border-radius: 15px;
+  margin-top: 1rem;
+  resize: none;
+  padding: 0.5rem;
+  width: 95%;
+  height: 150px;
+}
+
+.radio {
+  display: block;
+  padding: 1rem;
+}
+
+.radio input {
+  padding: 0.5rem;
+}
+
+.business-address {
+  margin-top: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+select {
+  font-family: "Quicksand", sans-serif;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #6ea4bf;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+
+.tier-details {
+  font-family: "Quicksand", sans-serif;
+  margin-top: 1rem;
+}
+
+legend {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+/*------------- Thanks --------------*/
+
+.thanks h1 {
+    font-family: "Raleway", sans-serif;
+}
+
+.thanks h2 {
+    font-family: "Quicksand", sans-serif;
+}
+
+.thanks {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 19rem;
 }
 
 /*------------- Footer --------------*/
 
 footer {
-    background-color: #1A535C;
-    color: rgb(226, 226, 226);
-    font-family: "Quicksand", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
+  background-color: #1a535c;
+  color: rgb(226, 226, 226);
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .social-icons a img {
-    width: 30px;
-    margin: 1rem;
+  width: 30px;
+  margin: 1rem;
 }
 
 .copy-info {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 .contact-information {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .attributions {
-    font-size: 10px;
-    margin: 1rem;
+  font-size: 10px;
+  margin: 1rem;
 }
 
 .rigby-map {
-    width: 90vw;
-    margin: 0 auto;
+  width: 90vw;
+  margin: 0 auto;
 }
