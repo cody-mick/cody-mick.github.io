@@ -1,7 +1,5 @@
 {
     "name" : "Chamber of Commerce Directory",
-    "town" : "Rigby",
-    "state" : "Idaho",
     "members" : [
         {
             "business" : "Rigby Produce",
