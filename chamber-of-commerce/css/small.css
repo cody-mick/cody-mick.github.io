@@ -444,6 +444,61 @@ legend {
     margin-bottom: 19rem;
 }
 
+/*----------- Contact ---------------*/
+
+.contact-title {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.contact-subtitle {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.contact-info-page {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+.comments-box {
+    width: 100%;
+}
+
+.board-of-directors {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.board-of-directors h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+.board-of-directors p:nth-child(3) {
+    margin-top: 0.5rem;
+}
+
+.rigby-map {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.rigby-map iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/*----------- Directory -------------*/
+
+
+
 /*------------- Footer --------------*/
 
 footer {

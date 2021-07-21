@@ -28,11 +28,11 @@
         <h4>Rigby Chamber of Commerce</h4>
       </div>
       <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="rigby.html">Rigby</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="rigby.html">Rigby</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -41,16 +41,127 @@
       </div>
     </nav>
     <main>
-      <iframe
-        class="rigby-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11543.114233464208!2d-111.92393526042763!3d43.673575065927906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53546c26bac0d859%3A0xbf887dcc84af9018!2sRigby%2C%20ID%2083442!5e0!3m2!1sen!2sus!4v1626718361383!5m2!1sen!2sus"
+      <h1 class="contact-title">Contact Us!</h1>
+      <div class="underline"></div>
+      <div class="contact-subtitle">
+        <p>Questions? Comments? Concerns?</p>
+        <p>We'd love to hear them!</p>
+      </div>
+      <div class="contact-info-page">
+        <h4>Rigby Chamber of Commerce</h4>
+        <p>PO Box 327</p>
+        <p>Rigby, ID 83442</p>
+        <p>208.745.8111 ext. 21</p>
+        <p>inforequest@rigbychamber.com</p>
+      </div>
+      <div class="board-of-directors">
+        <h3>Board of Directors</h3>
+        <div class="underline"></div>
+        <p>President - Teresa Anderson</p>
+        <p>President Elect - Brad Wells</p>
+        <p>Secretary - Misty Erickson</p>
+        <p>Treasurer - Chris Hayward</p>
+        <p>Board Member - Ginger Crystal</p>
+        <p>Board Member - Steve Abbott</p>
+        <p>Board Member - Quinn Mickesell</p>
+        <p>Board Member - Joe Ricks</p>
+        <p>Board Member - Dan Peck</p>
+      </div>
+      <form action="thanks.html">
+        <fieldset>
+          <legend>Contact the Chamber</legend>
+          <label class="top"
+            >Full Name*<input type="text" name="full-name" required
+          /></label>
+          <label class="top"
+            >Phone Number*<input type="tel" name="phone" required
+          /></label>
+          <label class="top"
+            >Email*<input
+              type="email"
+              name="email"
+              placeholder="someone@somewhere.com"
+              required
+          /></label>
+          <label class="top"
+            >Comments:<textarea class="comments-box" name="comments"></textarea>
+          </label>
+          <input
+            class="submitBtn"
+            type="submit"
+            name="contact-submit-button"
+            value="Contact"
+          />
+        </fieldset>
+      </form>
+      <div class="rigby-map">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11543.111248226529!2d-111.92393526171716!3d43.67359058600714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53546c26bac0d859%3A0xbf887dcc84af9018!2sRigby%2C%20ID%2083442!5e0!3m2!1sen!2sus!4v1626830708003!5m2!1sen!2sus"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
       ></iframe>
+      </div>
     </main>
     <footer>
-
+      <div class="contact-information">
+        <p>Rigby Chamber of Commerce</p>
+        <p>P.O. Box 327, Rigby, ID 83442</p>
+        <p>208-745-8111 ext. 21</p>
+        <p>inforequest@rigbychamber.com</p>
+      </div>
+      <div class="copy-info">
+        &copy; <span class="year"></span> | Cody Mickelsen | BYU-Idaho
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="blank"
+          ><img
+            src="images/social-icons/png/023-facebook.png"
+            alt="Facebook Icon"
+            width="50px"
+        /></a>
+        <a href="https://www.instagram.com" target="blank"
+          ><img
+            src="images/social-icons/png/044-instagram.png"
+            alt="Instagram Icon"
+            width="50px"
+        /></a>
+        <a href="https://www.twitch.com" target="blank"
+          ><img
+            src="images/social-icons/png/094-twitch.png"
+            alt="Twitch Icon"
+            width="50px"
+        /></a>
+        <a href="https://www.youtube.com" target="blank"
+          ><img
+            src="images/social-icons/png/116-youtube.png"
+            alt="YouTube Icon"
+            width="50px"
+        /></a>
+      </div>
+      <p class="modinfo">
+        Site Last Modified: <span class="last-modified"></span>
+      </p>
+      <div class="attributions">
+        Icons made by
+        <a
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        <div>
+          Some content taken from
+          <a href="https://www.rigbychamber.com">Rigby Chamber of Commerce</a>
+        </div>
+        <div>
+          Weather data from
+          <a href="https://openweathermap.org/">OpenWeather</a>
+        </div>
+      </div>
     </footer>
     <script src="js/home-page.js"></script>
   </body>

@@ -52,25 +52,34 @@ fetch(url)
       // Converstion from timestamp into actual date.
       let startTimeStamp = forecast.alerts[0].start;
       let endTimeStamp = forecast.alerts[0].end;
-  
+
       let startTimeMilli = startTimeStamp * 1000;
       let endTimeMilli = endTimeStamp * 1000;
-  
+
       let startDate = new Date(startTimeMilli);
       let endDate = new Date(endTimeMilli);
-  
+
       let hReadableStart = startDate.toLocaleString();
       let hReadableEnd = endDate.toLocaleString();
-  
+
       let warningType = document.querySelector(".warning-type");
       warningType.textContent = forecast.alerts[0].event;
       let start = document.querySelector(".alert-start");
       let end = document.querySelector(".alert-end");
       start.textContent = hReadableStart;
       end.textContent = hReadableEnd;
+
+      let closeAlert = document.querySelector(".close-alert");
+      let weatherAlert = document.querySelector(".alert-banner");
+      closeAlert.addEventListener("click", () => {
+        closeAlert.style.display = "none";
+        weatherAlert.style.display = "none";
+      });
     } else {
-      let alertBanner = document.querySelector('.alert-banner');
+      let alertBanner = document.querySelector(".alert-banner");
       alertBanner.style.display = "none";
+      let alertBannerClose = document.querySelector(".close-alert");
+      alertBannerClose.style.display = "none";
     }
 
     // Code for weather section
@@ -106,7 +115,7 @@ fetch(url)
     for (let i = 1; i < 4; i++) {
       // Get the names of the next three days and add them to the individual divs
       let dayWeather = document.createElement("div");
-      dayWeather.setAttribute('class', 'forecast-weather-day')
+      dayWeather.setAttribute("class", "forecast-weather-day");
       let dayMilli = forecast.daily[i].dt * 1000;
       let dayDate = new Date(dayMilli);
       let dayNameDiv = document.createElement("div");
@@ -134,9 +143,9 @@ fetch(url)
         "https://openweathermap.org/img/wn/" +
         forecast.daily[i].weather[0].icon +
         "@2x.png";
-      let icon = document.createElement('img');
-      icon.setAttribute('src', iconsrc);
-      icon.setAttribute('alt', forecast.daily[i].weather[0].description);
+      let icon = document.createElement("img");
+      icon.setAttribute("src", iconsrc);
+      icon.setAttribute("alt", forecast.daily[i].weather[0].description);
 
       // Append all information to the dayWeather div
       dayWeather.appendChild(dayNameDiv);
@@ -148,10 +157,3 @@ fetch(url)
       threeDayDiv.appendChild(dayWeather);
     }
   });
-
-let closeAlert = document.querySelector(".close-alert");
-let weatherAlert = document.querySelector(".alert-banner");
-closeAlert.addEventListener("click", () => {
-  closeAlert.style.display = "none";
-  weatherAlert.style.display = "none";
-});
