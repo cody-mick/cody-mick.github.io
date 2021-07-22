@@ -29,7 +29,7 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 50%;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .nav-links li {
@@ -57,7 +57,10 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 50em) {
+  body {
+    overflow-x: hidden;
+  }
   .nav-links {
     position: absolute;
     right: 0px;
@@ -183,12 +186,14 @@ nav {
 
 .weather h2 {
   font-family: "Raleway", sans-serif;
-  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .current-weather {
   width: 90vw;
+  padding: 1rem;
   height: 250px;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
   display: flex;
@@ -209,6 +214,7 @@ nav {
 
 .three-day-weather {
   width: 90vw;
+  padding: 1rem;
   text-align: center;
   text-transform: capitalize;
   box-shadow: 3px 3px 10px gray;
@@ -245,6 +251,12 @@ nav {
 
 /*----------- Chamber Goals ------------------*/
 
+.chamber-goals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .chamber-goals h2 {
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -257,14 +269,17 @@ nav {
 }
 
 .purpose-image {
-  padding: 0.5rem;
-  width: 360px;
+  margin: 1rem;
+  width: 300px;
+  box-shadow: 3px 3px 10px gray;
 }
 
 /*----------- Business Spotlight -------------*/
 
 .business-spotlight h2 {
   font-family: "Raleway", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .business-spotlight {
@@ -276,13 +291,14 @@ nav {
 
 .business-logo {
   width: 300px;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .business-motto {
   text-align: center;
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
+  margin-bottom: 2rem;
 }
 
 /*--------- Upcoming Events ---------*/
@@ -321,6 +337,7 @@ nav {
 .rigby-title {
   font-family: "Raleway", sans-serif;
   margin: 1rem;
+  text-align: center;
 }
 
 .city-info {
@@ -328,16 +345,65 @@ nav {
   margin: 1rem;
 }
 
+.philo-blurb {
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.philo-blurb div:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
 .philo {
   width: 200px;
+  margin: 1rem;
+  box-shadow: 3px 3px 10px gray;
+}
+
+.population {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
+}
+
+.high-school {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rhs {
   width: 300px;
 }
 
+.potato-warehouse {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .potato {
   width: 250px;
+  margin: 1rem;
+  box-shadow: 3px 3px 10px gray;
 }
 
 /*------------ Join -----------------*/
@@ -497,6 +563,8 @@ legend {
 
 /*----------- Directory -------------*/
 
+/* Grid View */
+
 .directory-title {
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -505,6 +573,43 @@ legend {
 
 .card-logo {
   width: 200px;
+}
+
+.directory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #636363;
+  background-color: #dadada;
+}
+
+.bus-name {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.phone-num {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.web-link {
+  padding: 0.75rem;
+  border-radius: 15px;
+  background-color: #6ea4bf;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 /*------------- Footer --------------*/

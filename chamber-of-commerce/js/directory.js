@@ -18,9 +18,21 @@ fetch(companyData)
             logo.setAttribute('alt', businesses.members[i].business);
             logo.setAttribute('class', 'card-logo');
 
+            let phone  = document.createElement('div');
+            phone.setAttribute('class', 'phone-num');
+            phone.textContent = businesses.members[i].phone;
+
+            let website = document.createElement('a');
+            website.setAttribute('class', 'web-link');
+            website.setAttribute('href', businesses.members[i].website);
+            website.setAttribute('target', 'blank');
+            website.innerHTML = "Check Us Out!";
+
             card.appendChild(businessName);
             card.appendChild(logo);
-            
+            card.appendChild(phone);
+            card.appendChild(website);
+
             let directory = document.querySelector('.directory');
             directory.appendChild(card);
         }

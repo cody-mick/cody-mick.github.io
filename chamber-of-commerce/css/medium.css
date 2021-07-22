@@ -1,3 +1,9 @@
 @media only screen and (min-width: 50em) {
-    
+    .hero {
+        height: 100vh;
+    }
+
+    .nav-links a {
+        padding: 0.18rem;
+    }
 }
