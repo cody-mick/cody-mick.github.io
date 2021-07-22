@@ -497,7 +497,15 @@ legend {
 
 /*----------- Directory -------------*/
 
+.directory-title {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0;
+}
 
+.card-logo {
+  width: 200px;
+}
 
 /*------------- Footer --------------*/
 
