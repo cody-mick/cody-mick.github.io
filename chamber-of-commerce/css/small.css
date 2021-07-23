@@ -17,6 +17,11 @@ nav {
   font-family: "Raleway", sans-serif;
 }
 
+.active {
+  background-color: #ff6b6b;
+  border-radius: 10px;
+}
+
 .chamber-logo {
   width: 90px;
   padding-right: 1rem;
