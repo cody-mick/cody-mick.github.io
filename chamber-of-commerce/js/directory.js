@@ -37,3 +37,15 @@ fetch(companyData)
             directory.appendChild(card);
         }
     })
+
+let gridButton = document.querySelector('.grid-button');
+let listButton = document.querySelector('.list-button');
+let directory = document.querySelector('.directory');
+
+gridButton.addEventListener('click', () => {
+    directory.setAttribute('class', 'directory-grid');
+});
+
+listButton.addEventListener('click', () => {
+    directory.setAttribute('class', 'directory');
+});

@@ -17,7 +17,15 @@ nav {
   font-family: "Raleway", sans-serif;
 }
 
+.chamber-logo {
+  width: 90px;
+  padding-right: 1rem;
+}
+
 .logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -176,17 +184,18 @@ nav {
 
 /*--------- Weather Section ---------*/
 
+.weather-title {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .weather {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
   font-family: "Quicksand", sans-serif;
-}
-
-.weather h2 {
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 0.5rem;
 }
 
 .current-weather {
@@ -198,7 +207,7 @@ nav {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   box-shadow: 3px 3px 10px gray;
   background-color: rgb(226, 226, 226);
@@ -214,7 +223,6 @@ nav {
 
 .three-day-weather {
   width: 90vw;
-  padding: 1rem;
   text-align: center;
   text-transform: capitalize;
   box-shadow: 3px 3px 10px gray;
@@ -222,7 +230,7 @@ nav {
 }
 
 .forecast-weather-day {
-  padding: 1rem;
+  padding: 1.3rem;
 }
 
 /*----------- Weather Alert --------*/
@@ -257,7 +265,7 @@ nav {
   align-items: center;
 }
 
-.chamber-goals h2 {
+.goal-title {
   font-family: "Raleway", sans-serif;
   text-align: center;
   padding: 1rem;
@@ -276,8 +284,9 @@ nav {
 
 /*----------- Business Spotlight -------------*/
 
-.business-spotlight h2 {
+.spotlight-title {
   font-family: "Raleway", sans-serif;
+  text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -563,7 +572,9 @@ legend {
 
 /*----------- Directory -------------*/
 
-/* Grid View */
+.view-buttons {
+  display: none;
+}
 
 .directory-title {
   text-align: center;
@@ -572,7 +583,7 @@ legend {
 }
 
 .card-logo {
-  width: 200px;
+  width: 150px;
 }
 
 .directory {

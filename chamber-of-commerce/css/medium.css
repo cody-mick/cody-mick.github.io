@@ -1,9 +1,94 @@
-@media only screen and (min-width: 50em) {
-    .hero {
-        height: 100vh;
+@media only screen and (min-width: 55em) {
+    /* ---------------- Home Page ---------------- */
+  .hero {
+    height: 100vh;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #6ea4bf;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    z-index: 2;
+  }
+
+  .nav-links a {
+    padding: 0.18rem;
+  }
+
+  .weather {
+    flex-direction: row;
+  }
+
+  .current-weather {
+    width: 20vw;
+    margin: 1rem;
+  }
+
+  .forecast-container {
+    width: 70vw;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .business-spotlight {
+      flex-direction: row;
+  }
+
+  .upcoming-events {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+  }
+
+  .chamber-goals {
+      flex-direction: row;
+      margin: 1rem;
     }
 
-    .nav-links a {
-        padding: 0.18rem;
+    /* -------------------- Rigby Page ----------- */
+
+    .philo-blurb {
+        flex-direction: row;
+    }
+
+    .high-school {
+        flex-direction: row-reverse;
+    }
+
+    .potato-warehouse {
+        flex-direction: row;
+    }
+
+    /* ----------------- Directory ----------------- */
+
+    .directory-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .view-buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .view-buttons img {
+      width: 25px;
+      margin: 1rem;
+    }
+
+    .view-buttons img:hover {
+      cursor: pointer;
     }
 }

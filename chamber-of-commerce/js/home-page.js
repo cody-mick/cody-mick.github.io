@@ -111,7 +111,7 @@ fetch(url)
     currentWeatherDiv.appendChild(weatherCon);
 
     // Code for the Three Day Forecast section
-    let threeDayDiv = document.querySelector(".three-day-weather");
+    let threeDayDiv = document.querySelector(".forecast-container");
     for (let i = 1; i < 4; i++) {
       // Get the names of the next three days and add them to the individual divs
       let dayWeather = document.createElement("div");
