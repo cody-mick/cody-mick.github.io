@@ -109,11 +109,12 @@ img {
    } 
 
    header {
-       width: 100%;
+       width: 65%;
    }
 
    article {
        padding: 3em;
+       margin: 2em;
    }
 
    figure {
