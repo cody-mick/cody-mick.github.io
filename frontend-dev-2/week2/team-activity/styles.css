@@ -1,0 +1,49 @@
+body {
+    background-color:rgb(162, 162, 224);
+}
+
+main {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(95, 95, 95);
+    background-color: rgb(247, 247, 247);
+}
+
+h1 {
+    text-align: center;
+}
+
+.first-input,
+.second-input,
+.buttons,
+.outputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.first-input button,
+.second-input button {
+    margin-left: 1rem;
+    width: 10rem;
+}
+
+.buttons button {
+    margin: 1rem;
+    width: 5rem;
+    height: 2.5rem;
+    font-size: large;
+}
+
+.outputs {
+    flex-direction: column;
+}
+
+.outputs div {
+    margin: 1rem;
+    font-size: larger;
+}
+

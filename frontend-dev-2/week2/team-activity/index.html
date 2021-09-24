@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Meeting</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Team Activity</h1>
+      <h1>Team Activity</h1>
     </header>
     <main>
-        <input id="num-1" type="text">
+      <div class="first-input">
+        <input id="num-1" type="text" />
         <button onclick="display()">Display</button>
-        <div class="output"></div>
+      </div>
 
-        <input id="num-2" type="text">
+      <div class="second-input">
+        <input id="num-2" type="text" />
         <button onclick="calc()">Calculate</button>
-        <div class="output-2"></div>
+      </div>
 
-        <button onclick="addingMachine()">+</button>
-        <div class="output-3"></div>
+      <div class="buttons">
+        <button onclick="addingMachine('+')">+</button>
+        <button onclick="addingMachine('-')">-</button>
+        <button onclick="addingMachine('*')">*</button>
+        <button onclick="addingMachine('/')">/</button>
+        <button onclick="addingMachine('%')">%</button>
+      </div>
+      <div class="outputs">
+        <span>Output 1</span><div class="output"></div>
+        <span>Output 2</span><div class="output-2"></div>
+        <span>Output 3</span><div class="output-3"></div>
+      </div>
     </main>
-    <footer>
-        WDD 330
-    </footer>
     <script>
-        const display = () => {
-            const num = document.getElementById("num-1").value;
-            document.querySelector(".output").innerHTML = num;
-        }
+      const display = () => {
+        const num = document.getElementById("num-1").value;
+        document.querySelector(".output").innerHTML = num;
+      };
 
-        function calc() {
-            let calcNum = document.getElementById("num-2").value;
-            console.log(calcNum);
-            let sum = 0;
-            for (let i = 0; i <= calcNum; i++) {
-                sum += i;
-            }
-            document.querySelector(".output-2").innerHTML = sum;
+      function calc() {
+        let calcNum = document.getElementById("num-2").value;
+        console.log(calcNum);
+        let sum = 0;
+        for (let i = 0; i <= calcNum; i++) {
+          sum += i;
         }
+        document.querySelector(".output-2").innerHTML = sum;
+      }
 
-        function addingMachine() {
-            let num1 = document.getElementById("num-1").value;
-            let num2 = document.getElementById("num-2").value;
-            document.querySelector(".output-3").innerHTML = Number(num1) + Number(num2);
+      function addingMachine(operation) {
+        let num1 = Number(document.getElementById("num-1").value);
+        let num2 = Number(document.getElementById("num-2").value);
+        let result = 0;
+        switch (operation) {
+          case "+":
+            result = num1 + num2;
+            break;
+          case "-":
+            result = num1 - num2;
+            break;
+          case "*":
+            result = num1 * num2;
+            break;
+          case "/":
+            result = num1 / num2;
+            break;
+          case "%":
+            result = num1 % num2;
+            break;
         }
+        document.querySelector(".output-3").innerHTML = result;
+      }
     </script>
-</body>
+  </body>
 </html>
