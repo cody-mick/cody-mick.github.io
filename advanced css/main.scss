@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+// Colors
+$color1 : #FAEBD7;
+$color2 : #6495ED;
+$color3 : #DEB887;
+$color4 : white;
+
+// Fonts
+$font1 : Lora, serif;
+$font2 : Arial, Helvetica, sans-serif;
+
+// Breakpoint
+$min-width: 550px;
+
+h1, h2 {
+    font-family: $font1;
+}
+
+body {
+    font-family: $font2;
+    margin: 0;
+    @media (min-width: $min-width) {
+        div {
+            display: flex;
+            flex-direction: row;
+        } 
+}
+
+main {
+    background-color: $color1;
+    padding: 1em;
+}
+
+header {
+    background-color: $color2;
+    text-align: right;
+    padding: 1em;
+    h1 a {
+        color: $color1;
+        text-decoration: none;
+    }
+    @media (min-width: $min-width) {
+        & {
+            width: 65%;
+        }
+    }
+}
+
+hr {
+    color: $color1;
+}
+
+nav ul {
+    list-style-type: none;
+    li {
+        padding: 0.5em;
+    }
+    a {
+        color: $color1;
+        text-decoration: none;
+        :hover {
+            color: $color4;
+            text-decoration: underline;
+        }
+        :active {
+            color: $color3;
+            text-decoration: none;
+        }
+    }
+
+}
+
+article {
+    background-color: rgb(250, 250, 250);
+    box-shadow: 5px 5px 5px #888888;
+    margin: 0 1em 1em 1em;
+    padding: 1em;
+    @media (min-width: $min-width) {
+        padding: 3em;
+        margin: 2em;
+    }
+}
+
+.post-date {
+    color: #888888;
+}
+
+.post-content h2 a {
+    :link, :visited {
+        color: black;
+        text-decoration: none;
+    }
+    :hover {
+        color: $color2;
+        text-decoration: underline;
+    }
+    :active {
+        color: $color3;
+    }
+}
+
+.post-content p a {
+    :link, :visited {
+        color: $color2;
+        text-decoration: none;
+    }
+    :hover {
+        text-decoration: underline;
+    }
+    :active {
+        color: $color3;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 550px) {
+   figure {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+}
+}
