@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.board-box {
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tic-tac-grid {
+    height: 30rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+}
+
+.cell {
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    padding: auto;
+}
+
+.tic-tac-grid div:nth-child(3n) {
+    border-right: none;
+}
+
+.cell:nth-child(-n + 3) {
+    border-top: none;
+} 
+
+.cell:nth-child(3n  - 2) {
+    border-left: none;
+} 
+
+.cell:nth-child(n + 7) {
+    border-bottom: none;
+}
+
+.cell:hover {
+    background-color: rgb(139, 139, 224);
+}
