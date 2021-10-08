@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/tic-tac-style.css" />
   </head>
   <body>
-      <h1>TIC TAC TOE</h1>
-    <div class="board-box">
+    <h1>TIC TAC TOE</h1>
+    <div class="grid">
       <div class="tic-tac-grid">
         <div class="cell"></div>
         <div class="cell"></div>
@@ -22,5 +22,34 @@
         <div class="cell"></div>
       </div>
     </div>
+    <div class="reset-button">
+      <button id="reset">RESET</button>
+    </div>
+    <script>
+      let grid = document.querySelector(".tic-tac-grid");
+      const resetButton = document.getElementById("reset");
+      let playerOne = "X";
+      let playerTwo = "O";
+      let player = playerOne;
+      function makeMove(e) {
+        console.log(e.target);
+        e.target.innerHTML = player;
+        if (player === playerOne) player = playerTwo;
+        else player = playerOne;
+      }
+      function reset() {
+        const grid = document.querySelector(".tic-tac-grid");
+        for (let i = 0; i < grid.children.length; i++) {
+          grid.children[i].innerText = "";
+        }
+        const children = Array.from(grid.children);
+        const empty = children.filter(function (child) {
+          return child.innerText == "X" || child.innerText == "O";
+        });
+        console.log(empty);
+      }
+      grid.addEventListener("click", makeMove);
+      resetButton.addEventListener("click", reset);
+    </script>
   </body>
 </html>
