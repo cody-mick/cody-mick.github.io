@@ -2,12 +2,14 @@
 
 body {
     font-family: 'Overpass', sans-serif;
-    text-align: center;
-    background-color: #46494c;
+    background-color: #cecece;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    color: rgb(240, 240, 240);
+.title-page-header {
+    color: rgb(43, 41, 41);
+    text-align: center;
 }
 
 .underline {
@@ -18,16 +20,40 @@ h1 {
     margin-bottom: 2rem;
 }
 
-ol {
+.contents {
     margin: 0 auto;
-    width: 25%;
-    background-color: #c3c5c6;
+    padding: 0;
+    width: 30%;
+    background-color: #e4e4e4;
     box-shadow: 8px 8px 20px #888;
     border-radius: 15px;
     list-style: none;
     color: rgb(240, 240, 240);
 }
 
-ol li {
-    padding: 0.5rem;
+.contents li {
+    padding: 1rem;
+    margin-left: 1.75rem;
+}
+
+/* Notes Page Formatting */
+
+.notes-page {
+    margin-left: 10rem;
+}
+
+code {
+    background-color: #3c4252;
+    color: #fff;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    width: 50%;
+}
+
+/* Footer */
+
+footer {
+    padding: 5rem;
+    text-align: center;
 }

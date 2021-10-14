@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Week 5 | WDD 330</title>
+  </head>
+  <body>
+    <main>
+      <div class="notes-page">
+        <h1>Week 05</h1>
+        <div>
+          <a href="team-activity.html">Team Activity</a>
+        </div>
+        <div>
+          <a href="quiz-ninja/index.html">Quiz Ninja</a>
+        </div>
+        <div class="questions">
+          <h2>Questions:</h2>
+          <ul>
+            <li>
+              What are efficient ways to visualize code and see where errors
+              need to be thrown?
+            </li>
+            <li>
+              In the beginning, it is better to just be constantly debugging
+              line by line? Or better to write a chunk of code and debug in
+              chunks?
+            </li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="notes">
+          <h2>Notes</h2>
+          <p>Causes of Errors:</p>
+
+          <ol>
+            <li>
+              System Error - there is a problem with the system or external
+              devices with which the program is interacting
+            </li>
+            <li>
+              Programmer Error - the program contains incorrect syntax or faulty
+              logic; it could even be as simple as a typo.
+            </li>
+            <li>
+              User Error - the user has entered data incorrectly, which the
+              program is unable to handle.
+            </li>
+          </ol>
+          <p>
+            It can be argued that user errors are also programmer errors because
+            the program should be designed in a way that prevents the user from
+            making the error.
+          </p>
+          <h3>Exceptions</h3>
+          <p>
+            An exception is an error that produces a return value that can then
+            be used by the program to deal with the error. Trying to call a
+            method that is nonexistent will result in a reference error that
+            raises and exception.
+          </p>
+          <h3>Stack Trace</h3>
+          <p>
+            An exception will produce a stack trace. A stack trace is a sequence
+            of functions or method calls that lead to the point where the error
+            occurred. A stack trace will work backwards from the point at which
+            the error occurred to identify the original function or method that
+            started the sequence.
+          </p>
+          <h3>Warnings</h3>
+          <p>
+            A warning can occur if there's an error in the code that isn't
+            enough to cause the program to crash.
+          </p>
+          <p>
+            When a runtime error occurs in the browser, the HTML will still
+            appear, but the JavaScript code will stop working in the background.
+          </p>
+          <p>
+            Ensure that the code you write fails loudly in development, so any
+            errors can be identified and fixed quickly.
+          </p>
+          <h3>Strict Mode</h3>
+          <p>
+            Strict mode considers coding practices that were previously accepted
+            as just being 'poor style' as actual errors. This helps us to catch
+            errors early on, and fix them.
+          </p>
+          <p>
+            Not using strict mode is referred to as 'sloppy mode' as it is
+            forgiving of sloppy programming practices.
+          </p>
+          <p>How to use strict mode on a JavaScript file:</p>
+          <code> 'use strict'; </code>
+          <p>
+            You can even use strict mode on a per function basis by adding the
+            above snippet to the top of a function.
+          </p>
+          <pre>
+            <code> 
+              function strictly() { 
+              'use strict'; // function 
+              } 
+          </code>
+          </pre>
+          <h3>Linting Tools</h3>
+          <p>
+            Linters are designed to test the quality of JavaScript code, beyond
+            simply using strict mode.
+          </p>
+          <p>
+            Passing a linting test does not guarantee that your code is
+            flawless, but does ensure that you are at least consistent.
+          </p>
+          <h3>Feature Detection</h3>
+          <p>
+            The recommended way to determine browser support for a feature is to
+            use feature detection. This is done using an <em>if</em> statement
+            to check whether an object of method exists before trying to
+            actually call the method.
+          </p>
+          <h3>Debugging Methods</h3>
+          <h4>Alerts</h4>
+          <p>
+            The alert() method. Because the alert() will stop the code from
+            running until the OK button is clicked, you can put the values of
+            variables inside the alert to show us what is happening in the
+            program at any given time when the alert is called.
+          </p>
+          <p>
+            The alert() method was the only way to debug JavaScript in the past,
+            but since then JavaScript has come a long way. The alert method is
+            generally discouraged nowadays.
+          </p>
+          <h4>The Console</h4>
+          <p>
+            The console is the preferred method of debugging and there are lots
+            of console tools to use to work through our programs. You could use
+            <code>console.log()</code>
+            to log a value to the console without actually stopping the
+            execution of the program, or you could use
+            <code>console.trace()</code>
+            which will log an interactive stack trace to the console. This shows
+            the functions that were called in the lead up to an exception
+            occurring while the code is running.
+          </p>
+          <p>
+            Modern browsers also come equipped with lots of debugging tools that
+            we can use. Just remember to remove any debugging code before
+            shipping your product.
+          </p>
+          <h3>Error Objects</h3>
+          <ul>
+            <li>
+              <em>EvalError</em> - Not in use anymore and is only retained for
+              backwards compatibility.
+            </li>
+            <li>
+              <em>RangeError</em> - thrown when a number is outside an allowable
+              range of values.
+            </li>
+            <li>
+              <em>ReferenceError</em> - thrown when a reference is made to an
+              item that doesn't exist.
+            </li>
+            <li>
+              <em>SyntaxError</em> - thrown when there's an error in the code's
+              syntax.
+            </li>
+            <li>
+              <em>TypeError</em> - thrown when there's an error in the type of
+              value used; for example, a string is used when a number is
+              expected.
+            </li>
+            <li>
+              <em>URIError</em> - thrown when there's a problem encoding or
+              decoding the URI.
+            </li>
+            <li>
+              <em>InternalError</em> - non-standard error that is thrown when an
+              error occurs in the JavaScript engine. A common cause of this is
+              too much recursion.
+            </li>
+          </ul>
+          <p>
+            All of these objects can be used as constructors to create custom
+            error objects. <em>i.e.</em>
+          </p>
+          <pre>
+            <code>
+            const error = new RangeError('You need to use a number between 1-100.')
+          </code>
+          </pre>
+          <p>
+            We can also create our own errors by using the
+            <em>throw</em> statement.
+          </p>
+          <p>
+            While a throw will stop a program wherever is occurs in the code, it
+            is best practice to throw an error object like so:
+          </p>
+          <code>throw new Error("I have a bad feeling about this.")</code>
+          <p>Another example would be like this function:</p>
+          <pre>
+            <code>
+              function squareRoot(number) {
+                'use strict';
+                if (number < 0) {
+                  throw new RangeError("You can't find the square root of a negative number!")
+                }
+                return Math.sqrt(number);
+              };
+            </code>
+          </pre>
+          <h3>Test Driven Development</h3>
+          <p>
+            Test driven development or TDD is the process of writing tests
+            before any actual code It usually results in the following workflow:
+          </p>
+          <ol>
+            <li>Write Tests (that initially fail)</li>
+            <li>Write code to pass the tests</li>
+            <li>Refactor the code</li>
+            <li>Test refactored code</li>
+            <li>Write more tests for new features</li>
+          </ol>
+          <h4>Jest Framework</h4>
+          <p>
+            Writing your own tests can be long and laborious. Luckily, there are
+            many frameworks for JavaScript that can assist in the writing of
+            tests for your program. One of those frameworks is Jest.
+          </p>
+          <p>Jest is a TDD framework developed by Facebook.</p>
+        </div>
+      </div>
+    </main>
+    <footer>Cody Mickelsen | WDD 330 | BYU-Idaho | Fall 2021</footer>
+  </body>
+</html>
