@@ -1,0 +1,73 @@
+
+small.css
+   2:12  ✖  Unexpected unit                                                                   length-zero-no-unit             
+   3:13  ✖  Unexpected unit                                                                   length-zero-no-unit             
+  77:3   ✖  Expected empty line before rule                                                   rule-empty-line-before          
+  79:13  ✖  Unexpected unit                                                                   length-zero-no-unit             
+ 109:3   ✖  Expected empty line before rule                                                   rule-empty-line-before          
+ 111:28  ✖  Unexpected unit                                                                   length-zero-no-unit             
+ 126:1   ✖  Expected empty line before comment                                                comment-empty-line-before       
+ 126:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 126:54  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 127:1   ✖  Expected empty line before comment                                                comment-empty-line-before       
+ 127:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 127:50  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 190:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 190:37  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 241:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 241:36  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 265:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 265:46  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 290:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 290:46  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 318:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 318:37  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 349:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 349:47  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 423:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 423:37  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 436:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 437:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 438:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 474:1   ✖  Expected selector ".radio input" to come before selector "form label.top input"   no-descending-specificity       
+ 500:1   ✖  Expected no more than 1 empty line                                                max-empty-lines                 
+ 507:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 508:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 511:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 511:37  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 514:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 518:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 522:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 523:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 524:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 527:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 527:37  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 530:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 531:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 532:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 533:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 537:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 538:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 539:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 543:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 544:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 545:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 549:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 553:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 554:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 555:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 556:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 560:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 564:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 568:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 569:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 570:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 574:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 575:5   ✖  Expected indentation of 2 spaces                                                  indentation                     
+ 578:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 578:37  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 631:3   ✖  Expected whitespace after "/*"                                                    comment-whitespace-inside       
+ 631:37  ✖  Expected whitespace before "*/"                                                   comment-whitespace-inside       
+ 661:1   ✖  Unexpected duplicate selector ".rigby-map", first used at line 567                no-duplicate-selectors          
+ 664:1   ✖  Unexpected missing end-of-source newline                                          no-missing-end-of-source-newline
+

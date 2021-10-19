@@ -1,0 +1,431 @@
+/*** uncss> filename: https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap ***/
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v24/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o18E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+ 
+/*** uncss> filename: https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css ***/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button{overflow:visible}button{text-transform:none}[type=button],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/*# sourceMappingURL=normalize.min.css.map */ 
+/*** uncss> filename: css/small.css ***/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #6ea4bf;
+  font-family: "Raleway", sans-serif;
+}
+
+.active {
+  background-color: #ff6b6b;
+  border-radius: 10px;
+}
+
+.chamber-logo {
+  width: 90px;
+  padding-right: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  z-index: 2;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 50em) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #6ea4bf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+/*--------------------- Home Page --------------------*/
+/*---------------- Home Page Hero ----------------*/
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/rigby-homepage-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
+}
+
+.hero-content {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  color: rgb(226, 226, 226);
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+.hero-button {
+  background-color: #6ea4bf;
+  color: black;
+  border: 1px solid #6ea4bf;
+  border-radius: 25px;
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #fa7d7d;
+  border: 1px solid #fa7d7d;
+}
+
+/*--------- Weather Section ---------*/
+
+.weather-title {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.current-weather {
+  width: 90vw;
+  padding: 1rem;
+  height: 250px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
+}
+
+.three-day-weather {
+  width: 90vw;
+  text-align: center;
+  text-transform: capitalize;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
+}
+
+/*----------- Weather Alert --------*/
+.weather-alert {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  height: 3rem;
+  width: 95%;
+  text-align: center;
+  background-color: #f75555;
+  padding-bottom: 4rem;
+}
+
+.alert-banner {
+  display: flex;
+  flex-direction: row;
+}
+
+.close-alert {
+  background-color: #f75555;
+  width: 5%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/*----------- Chamber Goals ------------------*/
+
+.chamber-goals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goal-title {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+.chamber-purpose {
+  font-family: "Quicksand", sans-serif;
+  padding: 0.5rem;
+}
+
+.purpose-image {
+  margin: 1rem;
+  width: 300px;
+  box-shadow: 3px 3px 10px gray;
+}
+
+/*----------- Business Spotlight -------------*/
+
+.spotlight-title {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.business-spotlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.business-logo {
+  width: 300px;
+  padding: 1rem;
+}
+
+.business-motto {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+/*--------- Upcoming Events ---------*/
+
+.upcoming-events {
+  padding: 0.5rem;
+  margin: 1rem;
+  box-shadow: 3px 3px 10px gray;
+  background-color: rgb(226, 226, 226);
+}
+
+.upcoming-events h2 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.underline {
+  width: 220px;
+  height: 2px;
+  background-color: #6ea4bf;
+  margin: 0 auto;
+  margin-top: 0.175rem;
+}
+
+.event-one,
+.event-two,
+.event-three {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  margin: 0.5rem;
+}
+
+/*---------------- Rigby Page -----------------*/
+
+/*------------ Join -----------------*/
+
+/*------------- Thanks --------------*/
+
+/*----------- Contact ---------------*/
+
+/*----------- Directory -------------*/
+
+/*------------- Footer --------------*/
+
+footer {
+  background-color: #1a535c;
+  color: rgb(226, 226, 226);
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.social-icons a img {
+  width: 30px;
+  margin: 1rem;
+}
+
+.copy-info {
+  margin: 0.5rem;
+}
+
+.contact-information {
+  margin: 1rem;
+}
+
+.attributions {
+  font-size: 10px;
+  margin: 1rem;
+} 
+/*** uncss> filename: css/medium.css ***/
+@media only screen and (min-width: 55em) {
+    /* ---------------- Home Page ---------------- */
+  .hero {
+    height: 100vh;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #6ea4bf;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    z-index: 2;
+  }
+
+  .nav-links a {
+    padding: 0.18rem;
+  }
+
+  .weather {
+    flex-direction: row;
+  }
+
+  .current-weather {
+    width: 20vw;
+    margin: 1rem;
+  }
+
+  .forecast-container {
+    width: 70vw;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .business-spotlight {
+      flex-direction: row;
+  }
+
+  .upcoming-events {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+  }
+
+  .chamber-goals {
+      flex-direction: row;
+      margin: 1rem;
+    }
+
+    /* -------------------- Rigby Page ----------- */
+
+    /* ----------------- Directory ----------------- */
+} 
+/*** uncss> filename: css/large.css ***/
