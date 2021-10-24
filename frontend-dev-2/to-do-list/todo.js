@@ -4,7 +4,10 @@ function addTask() {
 
   if (newTaskValue.value != "") {
     let newTask = document.createElement("li");
+    let deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "X";
     newTask.textContent = newTaskValue.value;
+    newTask.appendChild(deleteBtn);
     todoList.appendChild(newTask);
     newTaskValue.value = "";
   } else {
