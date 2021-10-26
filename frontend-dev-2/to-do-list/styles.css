@@ -55,8 +55,29 @@ input {
     border-radius: 15px;
 }
 
-.addBtn:hover {
+.addBtn:hover,
+.delete:hover,
+.complete:hover {
     cursor: pointer;
+}
+
+.delete {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+    margin-left: 2rem;
+}
+
+.complete {
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
 }
 
 .summary {

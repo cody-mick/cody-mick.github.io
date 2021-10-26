@@ -46,6 +46,7 @@ code {
     background-color: #3c4252;
     color: #fff;
     border: 1px solid #999;
+    border-radius: 15px;
     display: block;
     padding: 20px;
     width: 50%;
