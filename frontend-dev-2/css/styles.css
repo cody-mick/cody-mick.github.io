@@ -52,6 +52,13 @@ code {
     width: 50%;
 }
 
+.activities {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    row-gap: 1rem;
+}
+
 /* Footer */
 
 footer {
