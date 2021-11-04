@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="css/transformations.css" />
     <title>Week 7 | WDD 330</title>
   </head>
-
   <body>
     <main>
       <div class="notes-page">
-        <h1>Week 07</h1>
+        <h1>Week 08</h1>
         <div class="activities">
           <a href="team-activity.html">Team Activity</a>
         </div>
@@ -20,8 +20,180 @@
           <ul></ul>
         </div>
         <div class="notes">
-          
+          <h2>Ch. 8 CSS3 Transforms and Transitions</h2>
+          <p>
+            The CSS transform property lets you translate, rotate, scale, and/or
+            skew any element on the page. We can manipulate an elements
+            appearance using <strong>transform functions.</strong>
+          </p>
+          <h3>Translation</h3>
+          <p>
+            Translation functions allow you to move elements left, right, up, or
+            down. These functions are similar to the behavior of the position:
+            relative; when declaring top and left, moving elements up and down
+            or left and right along the x and y axes. A translation function
+            moves the elements without impacting the flow of the document.
+          </p>
+          <p>
+            The translate(x,y) function moves an element x from the left and y
+            from the top:
+          </p>
+          <pre>
+            <code>
+              transform: translate(45px, -45px);
+            </code>
+          </pre>
+          <div class="translate-example"></div>
+          <p>
+            This can also be used to only move an item horizontally or
+            vertically, like so:
+          </p>
+          <pre>
+            <code>
+              transform: translateX(45px);
+              transform: translateY(-30px);
+            </code>
+          </pre>
+          <div class="translatex"></div>
+          <div class="translatey"></div>
+          <h3>Scaling</h3>
+          <p>
+            The scale(x,y) function scales an element by the defined factors
+            horizontally then vertically. If only one value is provided, it will
+            be used for both the x and y values, growing or shrinking your
+            element or pseudo-element while maintaining the original aspect
+            ratio.
+          </p>
+          <pre>
+            <code>
+              transform: scale(1.5, 0.25);
+            </code>
+          </pre>
+          <div class="scale-example"></div>
+          <p>
+            As with translate, you can also use the scaleX(x) or scaleY(y)
+            functions. These functions will scale only the horizontal dimensions
+            or only the vertical dimensions, respectively. The elements center
+            will stay in the same place as its dimensions change.
+          </p>
+          <div class="scalex"></div>
+          <div class="scaley"></div>
+          <p>
+            NOTE: To declare multiple transforms, only declare one transform
+            followed by all of the functions separated by a space.
+          </p>
+          <pre>
+            <code>
+              element {
+                transform: translateX(40px) scale(1.5)
+              }
+            </code>
+          </pre>
+          <h3>Rotation</h3>
+          <p>
+            The rotate function rotates an element around the point of origin by
+            a specified angle value. As with scale, by default the point of
+            origin is the element's center. Generally, angles are declared in
+            degrees, with positive degrees moving clockwise and negative moving
+            counterclockwise. In addition to degrees, values can be provided in
+            grads, radians, or turns.
+          </p>
+          <pre>
+            <code>
+              transform: rotate(10deg);
+            </code>
+          </pre>
+          <div class="rotate"></div>
+          <h3>Skew</h3>
+          <p>
+            The skew function specifies a skew along the x and y axes. X for x
+            axis and Y for y axis. If the second parameter is omitted, the skew
+            will only occur on the x axis.
+          </p>
+          <pre>
+            <code>
+              transform: skew(15deg, 4deg);
+            </code>
+          </pre>
+          <div class="skew"></div>
+          <h3>Changing the Origin Point</h3>
+          <p>
+            The origin of a transformation can be changed using the
+            transform-origin property
+          </p>
+          <pre>
+            <code>
+              transform-origin: 0 0;
+            </code>
+          </pre>
+          <div class="origin"></div>
+          <h2>Transitions</h2>
+          <p>4 Transition Properties</p>
+          <ul>
+            <li>transition-property</li>
+            <li>transition-duration</li>
+            <li>transition-timing-function</li>
+            <li>transition-delay</li>
+          </ul>
+          <p>Or the shorthand "transition"</p>
+          <pre>
+            <code>
+              transition: transform 0.2s ease-out 50ms;
+            </code>
+          </pre>
+          <p>
+            You can declare multiple transitions like this, but organize them in
+            a comma separated list.
+          </p>
+          <h3>Animations</h3>
+          <p>Declare animation keyframes like this:</p>
+          <pre>
+            <code>
+              @keyframes <em>animationName</em> {
+                /* Put animation keyframes here
+              }
+            </code>
+          </pre>
+          <p>
+            Each key frame looks like its own CSS declaration block. There are 2
+            key words: <em>from</em> and <em>to</em>, which correspond to 0% and
+            100% respectively.
+          </p>
+          <h3>Animation Properties</h3>
+          <p>
+            Once the animation is declared, add it to your CSS rule block like
+            this:
+          </p>
+          <pre>
+            <code>
+              animation: <em>animationName</em>
+            </code>
+          </pre>
+          <h4>animation Shorthand property</h4>
+          <pre>
+            <code>
+              .verbose {
+                animation-name: appearDisappear;
+                animation-duration: 300ms;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;
+                animation-direction: alternate;
+                animation-delay: 5s;
+                animation-fill-mode: backwards;
+                animation-play-state: running;
+              }
+
+              .concise {
+                animation: 300ms ease-in alternate 5s backwards appearDisappear;
+              }
+            </code>
+          </pre>
+          <p>
+            Here you can also declare multiple animations on something by
+            separating your animations by a comma.
+          </p>
         </div>
+      </div>
     </main>
     <footer>Cody Mickelsen | WDD 330 | BYU-Idaho | Fall 2021</footer>
   </body>
