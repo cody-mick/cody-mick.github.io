@@ -140,3 +140,8 @@
         transform: rotate(360deg);
     }
 }
+
+.myCanvas,
+.anotherCanvas {
+    border: dotted 2px black;
+}
