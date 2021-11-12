@@ -4,7 +4,7 @@ body {
     font-family: 'Overpass', sans-serif;
     background-color: #cecece;
     margin: 0;
-    padding: 0;
+    padding: 0 5em 0 0 ;
 }
 
 .title-page-header {
