@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+body {
+    background: #8EB5CD;
+}
+
 header {
     text-align: center;
     padding: 1rem;
@@ -11,8 +15,13 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    padding: 1rem;
+    grid-template-rows: 2fr 1fr 1.25fr;
+}
+
+.poke-name {
+    background-color: red;
+    color: white;
+    width: 350px;
 }
 
 .picture-box {
@@ -24,15 +33,16 @@ main {
     align-items: center;
     border: 1px solid black;
     border-radius: 15px;
+    background-color: rgb(226, 226, 226);
 }
 
 .picture-box > img {
-    width: 300px;
+    width: 250px;
 }
 
 .typing-abilities {
     height: 150px;
-    width: 300px;
+    width: 350px;
     border: 1px solid black;
     grid-area: 2 / 1 / 3 / 1;
     border-radius: 15px;
@@ -40,7 +50,7 @@ main {
 
 .poke-desc {
     height: 200px;
-    width: 300px;
+    width: 350px;
     border: 1px solid black;
     grid-area: 3 / 1 / 4 / 1;
     border-radius: 15px;
