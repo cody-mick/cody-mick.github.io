@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Pokedex</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico">
-</head>
-<body>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+  </head>
+  <body>
     <header>
-        <h1>Placeholder Text</h1>
+      <h1>Pokedex and Team Builder</h1>
     </header>
     <main>
-        <div class="picture-box">
-            <h2 class="poke-name">No. 258 Mudkip</h2>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png" alt="">
+      <div class="team">
+        <div class="member0"><img class="team-image" src="" alt="" /></div>
+        <div class="member1"><img class="team-image" src="" alt="" /></div>
+        <div class="member2"><img class="team-image" src="" alt="" /></div>
+        <div class="member3"><img class="team-image" src="" alt="" /></div>
+        <div class="member4"><img class="team-image" src="" alt="" /></div>
+        <div class="member5"><img class="team-image" src="" alt="" /></div>
+      </div>
+      <button class="clear" onclick="clearTeam()">Clear Team</button>
+      <div class="picture-box">
+        <div class="name-id">
+          <div class="poke-name"></div>
+          <div class="poke-id"></div>
         </div>
-        <div class="typing-abilities">
-
+        <div class="sprite">
+          <img class="poke-img" src="" alt="" />
         </div>
-        <div class="poke-desc">
-
+      </div>
+      <div class="typing-abilities">
+        <span class="type-one"></span>
+        <span class="type-two"></span>
+      </div>
+      <div class="poke-desc">
+        <div class="pokedex-entry">
+          <div class="poke-flavor"></div>
         </div>
-        <div class="region-select">
-            <label for="region">Select Region:</label>
-            <select name="region" id="region">
-                <option value="kanto">Kanto (Gen. 1)</option>
-                <option value="johto">Johto (Gen. 2)</option>
-                <option value="hoenn">Hoenn (Gen. 3)</option>
-                <option value="sinnoh">Sinnoh (Gen. 4)</option>
-                <option value="unova">Unova (Gen. 5)</option>
-                <option value="kalos">Kalos (Gen. 6)</option>
-                <option value="alola">Alola (Gen. 7)</option>
-                <option value="galar">Galar (Gen. 8)</option>
-                <option value="national">National (All)</option>
-            </select>
+        <div class="poke-size">
+          <div class="poke-height"></div>
+          <div class="poke-weight"></div>
         </div>
-        <ul class="dex-list">
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-            <li>No. Name</li>
-        </ul>
+      </div>
+      <div class="dex"></div>
     </main>
     <footer>
-
+      <p>Cody Mickelsen | WDD330 | BYU-Idaho | Fall 2021</p>
     </footer>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
