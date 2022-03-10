@@ -14,12 +14,12 @@
     font-family: 'Fredoka', sans-serif;
 }
 
-nav {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -38,10 +38,4 @@ nav ul li a:hover {
 
 .active {
     text-decoration: underline;
-}
-
-.test-size {
-    width: 300px;
-    height: 100px;
-    background-color: red;
 }
