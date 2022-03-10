@@ -39,3 +39,31 @@ nav ul li a:hover {
 .active {
     text-decoration: underline;
 }
+
+/* Home Page Styles */
+.hero {
+    font-family: 'Fredoka', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vmin;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+/* Projects Page */
+
+
+
+/* Animations */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
