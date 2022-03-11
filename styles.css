@@ -8,10 +8,14 @@
 
 /* Header and Navbar Styles */
 .logo-nav {
-    background-color: #FFF;
+    background-color: #1D3F49;
     margin: 0;
     padding: 0;
     font-family: 'Fredoka', sans-serif;
+}
+
+.logo {
+    width: 75%;
 }
 
 nav ul {
@@ -21,6 +25,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 nav ul li {
@@ -28,8 +33,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333333;
+    color: #FFF;
     text-decoration: none;
+    font-size: 1.4rem;
 }
 
 nav ul li a:hover {
@@ -37,7 +43,7 @@ nav ul li a:hover {
 }
 
 .active {
-    text-decoration: underline;
+    text-decoration: 2px underline #03BC62;
 }
 
 /* Home Page Styles */
@@ -50,6 +56,11 @@ nav ul li a:hover {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.about {
+    background-color: #3454D1;
+    width: 100%;
 }
 
 
