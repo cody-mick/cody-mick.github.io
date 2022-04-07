@@ -58,8 +58,17 @@ nav ul li a:hover {
     animation-fill-mode: forwards;
 }
 
+.skills h2 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.about h2 {
+    color: #FFF;
+    font-family: 'Fredoka', sans-serif;
+}
+
 .about {
-    background-color: #3454D1;
+    background-color: #1D3F49;
     width: 100%;
 }
 
