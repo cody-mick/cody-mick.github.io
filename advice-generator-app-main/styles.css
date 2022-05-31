@@ -1,0 +1,59 @@
+:root {
+	--font-weight: 800;
+	--font-family: "Manrope", sans-serif;
+	--mobile-size: 375px;
+	--desktop-size: 1440px;
+	--body-font-size: 28px;
+
+	/* Primary Colors */
+	--light-cyan: hsl(193, 38%, 86%);
+	--neon-green: hsl(150, 100%, 66%);
+
+	/* Neutral Colors */
+	--grayish-blue: hsl(217, 19%, 38%);
+	--dark-grayish-blue: hsl(217, 19%, 24%);
+	--dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+	font-family: var(--font-family);
+	background-color: var(--dark-blue);
+}
+
+.advice-box {
+	background-color: var(--dark-grayish-blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+.accent-text {
+	color: var(--neon-green);
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 14px;
+}
+
+.main-text {
+	color: white;
+	font-weight: var(--font-weight);
+	letter-spacing: 2px;
+}
+
+.dice-icon {
+	background-color: var(--neon-green);
+	padding: 14px;
+	border-radius: 50%;
+}
+
+.hidden {
+	display: none;
+}
